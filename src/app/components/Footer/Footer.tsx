@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <main>
-      <div className="bg-green-300 flex mt-8">
+      <div className="bg-offwhite flex mt-8">
         <div className="py-11 ml-56 text-black">
           <p className="font-extrabold text-xl mb-4">Flushing Relaxing Spa</p>
           <p className="mb-4">Phone (appointments): 929-391-0284</p>

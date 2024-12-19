@@ -8,26 +8,27 @@
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease;
-  padding: 10px 20px;
-  background: white;
+  padding: 5px 10px; /* Shrink padding */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Adjust header styles when scrolled */
 .header-scrolled {
-  padding: 5px 20px; /* Shrink padding */
+  padding: 2px 10px; /* Shrink padding */
 }
 
 /* Logo styling */
 .logo {
   transition: all 0.3s ease; /* Smooth size transition */
-  margin-right: 320px;
+  margin-right: 430px;
 }
 
 .logo-large {
-  height: 100px; /* Default size at the top */
+  height: 106px; /* Default size at the top */
+  width: 150px;
 }
 
 .logo-small {
-  height: 60px; /* Smaller size when scrolled */
+  height: 70px; /* Smaller size when scrolled */
+  width: 110px;
 }

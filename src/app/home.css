@@ -1,7 +1,7 @@
 /* Container to position background and text overlay */
 .overlay-container {
   position: relative;
-  height: 70vh; /* Adjust height as needed */
+  height: 80vh; /* Adjust height as needed */
   width: 100%;
   overflow: hidden;
   display: flex;

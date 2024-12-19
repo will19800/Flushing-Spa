@@ -4,27 +4,77 @@ import Header from "./components/Header/Header";
 import Slider from "./components/Slider/Slider";
 import Map from "./components/Map";
 import Footer from "./components/Footer/Footer";
+import ImageCarousel from "./components/ImageCarousel/Carousel";
+import ReviewCarousel from "./components/ReviewCarousel/ReviewCarousel";
 import "./home.css";
 
+import { EmblaOptionsType } from "embla-carousel";
+
 export default function Home() {
+  const OPTIONS: EmblaOptionsType = { 
+    loop: true,
+    align: "center",
+    skipSnaps: false, 
+  };
+
+  const SLIDES = ["/spa1.png", "/spa2.png", "/spa3.png", "/spa4.png"];
+
+  const slidesData = [
+    {
+      quote:
+      "after a hard working day i had my body full relaxed. Thankx",
+      customer: "tingting yang",
+      profilePic: "/images/olga-profile.png",
+      reviewSource: "Google",
+    },
+    {
+      quote:
+        "Nice & relax , thank you!",
+      customer: "Gao Chun yan",
+      profilePic: "/images/fatima-profile.png",
+      reviewSource: "Google",
+    },
+    {
+      quote:
+        "I've been there a few times and I feel the environment is comfortable. I've also found two masseurs, one is Ding Ding and the other is Nina. Their service attitude is very good and their craftsmanship is also very conscientious. I'll come back next time.",
+      customer: "罗斌",
+      profilePic: "/images/stefany-profile.png",
+      reviewSource: "Google",
+    },
+    {
+      quote:
+        "The environment is good, clean, quiet, the waiters are enthusiastic and skilled, you can really feel comfortable here, 👍🏻👍🏻👍🏻 Like it",
+      customer: "Kewei Xu Zhang",
+      profilePic: "/images/stefany-profile.png",
+      reviewSource: "Google",
+    },
+    {
+      quote:
+        "The environment is good, professional, and the service is good. I will come again next time.",
+      customer: "J Chen",
+      profilePic: "/images/stefany-profile.png",
+      reviewSource: "Google",
+    },
+  ];
+
   return (
     <main>
       <Header />
       {/* Spacer to account for the fixed header */}
-      <div style={{ height: "125px" }}></div>
+      <div style={{ height: "116px" }}></div>
 
       <section className="overlay-container">
         <div className="background-component">
-          <Slider />
+          <ImageCarousel slides={SLIDES} options={OPTIONS} />
         </div>
 
         <div className="absolute z-10">
-          <div className="text-green-300 text-7xl mt-48 ml-16">
+          <div className="text-shadow text-6xl mt-48 ml-16 tracking-wider">
             Flushing
             <br />
             Relaxing Spa
           </div>
-          <div className="text-green-300 text-3xl mt-8 ml-16">
+          <div className="text-shadow text-2xl mt-8 ml-16 tracking-wider">
             SPA IN FLUSHING, NY
           </div>
         </div>
@@ -33,18 +83,18 @@ export default function Home() {
       <section>
         <div className="flex justify-center my-20 gap-11">
           <div className="flex-row justify-center text-center items-center">
-            <img src="/wechat.svg" height="150px" width="150px" />
+            <img src="/wechat.svg" height="100px" width="100px" />
             <p className="text-black text-2xl mt-3">微信</p>
           </div>
           <div className="flex-row justify-center text-center items-center">
-            <img src="/qrcode.svg" height="150px" width="150px" />
+            <img src="/qrcode.svg" height="100px" width="100px" />
             <p className="text-black text-2xl mt-3">WeChat</p>
           </div>
         </div>
       </section>
 
       <section className="justify-center">
-        <div className="bg-green-300 rounded-3xl mx-64">
+        <div className="bg-offwhite rounded-3xl mx-64">
           <h1 className="text-center text-5xl text-black p-12">
             Welcome To Our Practice
           </h1>
@@ -92,23 +142,31 @@ export default function Home() {
           </p>
         </div>
       </section>
-      
 
       <section>
-        
-        <h2 className="text-5xl text-center my-16 text-black">Our Locations</h2>
+        <div className="bg-offwhite p-10 mt-10">
+          <h2 className="text-2xl mb-8 text-brown1">Customers Reviews</h2>
+          <h1 className="text-6xl text-shadow mb-20">What Our Clients Say</h1>
+
+          <ReviewCarousel slides={slidesData} options={OPTIONS} />
+          
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-5xl text-center my-16 text-shadow">
+          Our Locations
+        </h2>
 
         <div className="flex justify-center px-6 pb-4">
-
           <Map />
 
-          <div className="w-4/12 h-5/6 bg-gray-50 p-6 rounded-lg shadow-md relative">
-
+          <div className="w-4/12 h-5/6 bg-offwhite p-6 rounded-lg shadow-md relative">
             {/* Content */}
             <div className="relative">
-              <h2 className="text-3xl font-semibold text-purple-800">Queens</h2>
-              <p className="mt-5 text-sm text-gray-700">
-              136-46 41st Ave Unit 1E
+              <h2 className="text-3xl font-semibold text-brown1">Queens</h2>
+              <p className="mt-5 text-sm text-shadow">
+                136-46 41st Ave Unit 1E
                 <br />
                 Flushing, NY 11355
               </p>
@@ -116,7 +174,7 @@ export default function Home() {
               <h3 className="mt-5 text-sm font-medium text-gray-900">
                 Hours Of Operation:
               </h3>
-              <ul className="mt-6 text-sm space-y-2 text-gray-800">
+              <ul className="mt-6 text-sm space-y-2 text-shadow">
                 <li>Monday: 10:00 AM - 1:00 AM</li>
                 <li>Tuesday: 10:00 AM - 1:00 AM</li>
                 <li>Wednesday: 10:00 AM - 1:00 AM</li>
@@ -131,7 +189,7 @@ export default function Home() {
                 {/* <button className="px-6 py-3 bg-purple-700 text-white font-medium rounded-lg hover:bg-purple-800">
                   Schedule Appointment
                 </button> */}
-                <button className="py-3 px-7 text-sm bg-purple-700 text-white font-medium rounded-full hover:bg-purple-800">
+                <button className="py-3 px-7 text-sm bg-grassgreen text-shadow font-medium rounded-full hover:bg-purple-800">
                   Call Us
                 </button>
               </div>

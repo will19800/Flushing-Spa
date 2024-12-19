@@ -20,17 +20,17 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="">
-      <div className={`header ${isScrolled ? "header-scrolled" : ""}`}>
+    <header>
+      <div
+        className={`header ${isScrolled ? "header-scrolled" : ""} bg-offwhite`}
+      >
         <Link href="http://localhost:3000">
           <img
-            src="/SPA.svg"
-            width={180}
-            height={100}
+            src="/SPAlogo1.png"
             className={`logo ${isScrolled ? "logo-small" : "logo-large"}`}
           />
         </Link>
-        <nav className="flex gap-6 items-center tracking-widest">
+        <nav className="flex ml-64 gap-6 items-center tracking-widest">
           <Link href="http://localhost:3000" className="text-black">
             Home
           </Link>
@@ -40,9 +40,6 @@ export default function Header() {
           <Link href="{/pricing}" className="text-black">
             Services
           </Link>
-          <Link href="{/features}" className="text-black">
-            Medical Grade Products
-          </Link>
           <Link href="{/about}" className="text-black">
             Blog
           </Link>
@@ -51,16 +48,16 @@ export default function Header() {
           </Link>
           <Link
             href="/LoginPage"
-            className="p-4 rounded-full text-black bg-green-50"
+            className="p-4 rounded-full text-shadow bg-grassgreen"
           >
             929-391-0284
           </Link>
-          <Link
+          {/* <Link
             href="/LoginPage"
             className="p-4 rounded-full text-black bg-green-50"
           >
             Book Online
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </header>

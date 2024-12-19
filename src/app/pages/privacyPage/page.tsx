@@ -8,11 +8,11 @@ export default function Home() {
     <main>
       <Header />
 
-      <div style={{ height: "121px" }}></div>
+      <div style={{ height: "118px" }}></div>
 
       <section>
-        <div className="bg-green-200 text-center">
-          <p className="px-44 py-24 text-black text-4xl font-extrabold tracking-wider">
+        <div className="bg-shadow text-center">
+          <p className="px-44 py-24 text-lightwhite text-4xl font-extrabold tracking-wider">
             Privacy Policy
           </p>
         </div>
