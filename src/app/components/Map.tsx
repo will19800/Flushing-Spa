@@ -28,13 +28,15 @@ export default function Map() {
         mapId: "MY_NEXTJS_MAPID",
       };
 
-      const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
+      if (mapRef.current) {
+        // Ensure mapRef.current is not null
+        const map = new Map(mapRef.current, mapOptions);
 
-      // const marker = new Marker({
-      //   map: map,
-      //   position: coordinates,
-
-      // });
+        const marker = new Marker({
+          map: map,
+          position: coordinates,
+        });
+      }
     };
 
     initMap();

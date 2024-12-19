@@ -4,7 +4,7 @@
     max-width: 100%; /* Center the carousel container */
     margin: auto; /* Center horizontally */
     --slide-height: 30rem;
-    --slide-spacing: 1rem;
+    --slide-spacing: 0.5rem;
     --slide-size: 33.333%; /* Adjust to show 3 slides at once */
   }
   .embla__viewport {
