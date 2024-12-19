@@ -25,7 +25,7 @@ export default function Header() {
       <div
         className={`header ${isScrolled ? "header-scrolled" : ""} bg-offwhite`}
       >
-        <Link href="http://localhost:3000">
+        <Link href="/">
           <Image
             src="/SPAlogo1.png"
             className={`logo ${isScrolled ? "logo-small" : "logo-large"}`}

@@ -22,7 +22,7 @@ export default function Home() {
         <div className="text-black mx-56">
           <h2 className="mb-6 mt-20 text-xl">TERMS OF USE</h2>
           <p className="text-gray-600">
-            Flushing Medical Spa ("we," "us," or "our") provides this website
+            Flushing Relaxing Spa ("we," "us," or "our") provides this website
             ("Site") to you conditioned on your acceptance without modification
             of the terms, conditions, and notices contained herein. Your use of
             this Site constitutes your agreement to all such terms, conditions,

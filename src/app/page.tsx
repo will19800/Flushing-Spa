@@ -107,7 +107,7 @@ export default function Home() {
             authentic Chinese massage techniques rooted in ancient practices.
             The center is led by a team of highly skilled and certified massage
             therapists, dedicated to delivering exceptional care and relaxation.
-            The practice has been transforming the well-being of clients since
+            The spa has been transforming the well-being of clients since
             its establishment in 2000.
             <br />
             <br />
