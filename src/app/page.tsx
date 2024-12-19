@@ -6,31 +6,32 @@ import Map from "./components/Map";
 import Footer from "./components/Footer/Footer";
 import ImageCarousel from "./components/ImageCarousel/Carousel";
 import ReviewCarousel from "./components/ReviewCarousel/ReviewCarousel";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 import "./home.css";
 
 import { EmblaOptionsType } from "embla-carousel";
 
 export default function Home() {
-  const OPTIONS: EmblaOptionsType = { 
+  const OPTIONS: EmblaOptionsType = {
     loop: true,
     align: "center",
-    skipSnaps: false, 
+    skipSnaps: false,
+    containScroll: false,
+    watchDrag: false,
+
   };
 
   const SLIDES = ["/spa1.png", "/spa2.png", "/spa3.png", "/spa4.png"];
 
   const slidesData = [
     {
-      quote:
-      "after a hard working day i had my body full relaxed. Thankx",
+      quote: "after a hard working day i had my body full relaxed. Thankx",
       customer: "tingting yang",
       profilePic: "/images/olga-profile.png",
       reviewSource: "Google",
     },
     {
-      quote:
-        "Nice & relax , thank you!",
+      quote: "Nice & relax , thank you!",
       customer: "Gao Chun yan",
       profilePic: "/images/fatima-profile.png",
       reviewSource: "Google",
@@ -60,7 +61,7 @@ export default function Home() {
 
   return (
     <main>
-      <Analytics/>
+      <Analytics />
       <Header />
       {/* Spacer to account for the fixed header */}
       <div style={{ height: "116px" }}></div>
@@ -89,7 +90,7 @@ export default function Home() {
             <p className="text-black text-2xl mt-3">微信</p>
           </div>
           <div className="flex-row justify-center text-center items-center">
-            <img src="/qrcode.svg" height="100px" width="100px" />
+            <img src="/wechatqrcode.jpg" height="100px" width="100px" />
             <p className="text-black text-2xl mt-3">WeChat</p>
           </div>
         </div>
@@ -101,46 +102,44 @@ export default function Home() {
             Welcome To Our Practice
           </h1>
           <p className="text-md px-8 pb-12 text-center text-black tracking-wider">
-            Flushing Medical Spa is an outstanding medical spa in the Flushing
-            neighborhood of Queens in New York City, New York, led by
-            board-certified obstetrics and gynecology physician QiLi Li. The
-            practice has been serving patients of all ages since 2000.
+            Flushing Relaxing Spa is a premier wellness center in the Flushing
+            neighborhood of Queens in New York City, New York, offering
+            authentic Chinese massage techniques rooted in ancient practices.
+            The center is led by a team of highly skilled and certified massage
+            therapists, dedicated to delivering exceptional care and relaxation.
+            The practice has been transforming the well-being of clients since
+            its establishment in 2000.
             <br />
             <br />
-            Flushing Medical Spa offers numerous aesthetic procedures, including
-            neurotoxin injections, laser treatments, and noninvasive treatments
-            for urinary incontinence and sexual dysfunction. Dr. Li provides
-            brow lifts, facelifts, double chin removal, and jowl fat removal
-            using innovative, nonincisional radiofrequency (RF) techniques with
-            an Agnes device. She takes a holistic approach, tailored to each
-            patient's needs and beauty goals. Flushing Medical Spa is exclusive
-            in the Flushing area for using a myriad of Cutera® devices. The
-            practice is innovative, using the first-ever permanent laser acne
-            treatment with a cutting-edge AviClear® machine. Other
-            revolutionary technologies available include multi-modality Cutera
-            xeo® Nd:YAG laser for Laser Genesis facials (red carpet or
-            Hollywood facials), Cutera Secret™ PRO radiofrequency (RF)
-            microneedling, laser hair removal, and CO2 laser technology.
+            Flushing Relaxing Spa specializes in a variety of massage therapies,
+            including Tuina (推拿) therapeutic massage, acupressure, and gua sha
+            for muscle tension relief and stress reduction. The spa also offers
+            reflexology, hot stone therapy, and cupping therapy, tailored to
+            each client’s unique needs. Harmony and balance are at the heart of
+            every treatment, combining traditional Chinese medicine principles
+            with modern relaxation practices.
             <br />
             <br />
-            Additional options include Cutera enlighten® PICO and nano lasers,
-            Cutera Juliet™ Erbium lasers, and Geneo (GLO2) facials. Flushing
-            Medical Spa uses HydraFacial® technology, LimeLight® IPL facials,
-            truSculpt® iD for fat burning, and truSculpt® flex for muscle
-            sculpting. The practice provides Emsella™ for urinary incontinence
-            and sexual dysfunction, LED treatment for anti-aging protocols and
-            anti-inflammatory effects, and a Zimmer machine and Pro-Nox™
-            laughing gas for added patient comfort during procedures.
+            Additional services include full-body massages for improved
+            circulation and deep relaxation, as well as targeted head and neck
+            therapies to alleviate tension and promote mental clarity. Flushing
+            Relaxing Spa incorporates high-quality essential oils and herbal
+            compresses to enhance the overall therapeutic experience.
+            Specialized packages for prenatal care, sports recovery, and posture
+            improvement are also available.
             <br />
             <br />
-            Flushing Medical Spa specializes in skin tightening, body
-            contouring, facial rejuvenation, and much more. All devices used at
-            Flushing Medical Spa are FDA-approved. The practice provides
-            medical-grade skin care products made in New York and offers private
-            labeling for all products. The Flushing Medical Spa team enjoys
-            improving the well-being and appearance of their clients and
-            welcomes them to the practice. Schedule a consultation by phone or
-            online today.
+            The tranquil ambiance at Flushing Relaxing Spa is designed to
+            provide the ultimate escape, featuring soothing music, aromatherapy,
+            and private treatment rooms. Clients can also purchase premium
+            herbal balms and oils, crafted with traditional Chinese ingredients,
+            to extend the benefits of their treatments at home.
+            <br />
+            <br />
+            At Flushing Relaxing Spa, the team is passionate about helping
+            clients achieve holistic well-being and relaxation. Schedule an
+            appointment online or call today to experience unparalleled care and
+            rejuvenation.
           </p>
         </div>
       </section>
@@ -151,7 +150,31 @@ export default function Home() {
           <h1 className="text-6xl text-shadow mb-20">What Our Clients Say</h1>
 
           <ReviewCarousel slides={slidesData} options={OPTIONS} />
+        </div>
+      </section>
+
+      <section>
+        <div className="bg-offwhite text-shadow text-center">
+          <h2 className="text-7xl p-10">Gallery</h2>
+          <p className="mb-12 mx-32">Immerse yourself in the tranquility and elegance of our space. Each corner of our spa is designed to provide relaxation, rejuvenation, and a sanctuary for your mind, body, and soul. Explore our gallery and get a glimpse of the experience waiting for you.</p>
           
+          <div className="flex p-8 gap-x-6">
+            <div className="flex-row gap-5">
+              <img className="mb-10 mt-6" src="gallery1.PNG"/>
+              <img className="mb-6" src="gallery2.PNG"/>
+              <img src="gallery3.PNG"/>
+            </div>
+            <div className="flex-row">
+              <img className="mb-6" src="gallery4.PNG"/>
+              <img className="mb-6" src="gallery5.PNG"/>
+              <img src="gallery6.PNG"/>
+            </div>
+            <div className="flex-row">
+              <img className="mb-10 mt-8" src="gallery7.PNG"/>
+              <img className="mb-6" src="gallery8.PNG"/>
+              <img src="gallery9.PNG"/>
+            </div>
+          </div>
         </div>
       </section>
 

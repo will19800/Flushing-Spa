@@ -22,14 +22,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
-  const scrollPrev = () => {
-    if (emblaApi) emblaApi.scrollPrev();
-  };
-
-  const scrollNext = () => {
-    if (emblaApi) emblaApi.scrollNext();
-  };
-
   return (
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
@@ -44,7 +36,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
                 <p className="text-gray-800 text-md h-60">{slide.quote}</p>
 
-                <span className="ml-8 block w-5/6 h-0.5 bg-shadow mb-8"/>
+                <span className="ml-8 block w-5/6 h-0.5 bg-shadow mb-8" />
 
                 <div className="flex items-center">
                   <img
@@ -66,20 +58,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           ))}
         </div>
       </div>
-
-      <button
-        onClick={scrollPrev}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-gray-600"
-      >
-        &#8249; {/* Left Arrow */}
-      </button>
-      <button
-        onClick={scrollNext}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:bg-gray-600"
-      >
-        &#8250; {/* Right Arrow */}
-      </button>
-      
     </section>
   );
 };
