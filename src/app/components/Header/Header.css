@@ -1,0 +1,33 @@
+/* Header container */
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  margin-bottom: 500px;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust header styles when scrolled */
+.header-scrolled {
+  padding: 5px 20px; /* Shrink padding */
+}
+
+/* Logo styling */
+.logo {
+  transition: all 0.3s ease; /* Smooth size transition */
+  margin-right: 320px;
+}
+
+.logo-large {
+  height: 100px; /* Default size at the top */
+}
+
+.logo-small {
+  height: 60px; /* Smaller size when scrolled */
+}

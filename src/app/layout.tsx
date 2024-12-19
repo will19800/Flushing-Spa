@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Varela_Round } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const varela_round = Varela_Round({
-  weight: ["400"], // Specify font weights you want to include
+const roboto = Roboto({
+  weight: ["300"], // Specify font weights you want to include
   subsets: ["latin"], // Include character subsets you need (e.g., 'latin')
 });
 
@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/TopBanner.jpg" />
+        <link rel="icon" href="/SPA.svg" />
       </head>
-      <body className={varela_round.className}>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }
