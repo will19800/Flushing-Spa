@@ -35,7 +35,7 @@ export default function Header() {
           />
         </Link>
         <nav className="flex ml-64 gap-6 items-center tracking-widest">
-          <Link href="http://localhost:3000" className="text-black">
+          <Link href="/" className="text-black">
             Home
           </Link>
           <Link href="{/about}" className="text-black">
