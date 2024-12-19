@@ -30,10 +30,11 @@ export default function Map() {
 
       const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
 
-      const marker = new Marker({
-        map: map,
-        position: coordinates,
-      });
+      // const marker = new Marker({
+      //   map: map,
+      //   position: coordinates,
+
+      // });
     };
 
     initMap();

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import Image from "next/image"
 import "./Header.css";
 
 export default function Header() {
@@ -25,9 +26,12 @@ export default function Header() {
         className={`header ${isScrolled ? "header-scrolled" : ""} bg-offwhite`}
       >
         <Link href="http://localhost:3000">
-          <img
+          <Image
             src="/SPAlogo1.png"
             className={`logo ${isScrolled ? "logo-small" : "logo-large"}`}
+            alt="logo"
+            height = {106}
+            width= {150}
           />
         </Link>
         <nav className="flex ml-64 gap-6 items-center tracking-widest">
