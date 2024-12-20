@@ -8,27 +8,76 @@
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease;
-  padding: 5px 10px; /* Shrink padding */
+  padding: 5px 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Adjust header styles when scrolled */
 .header-scrolled {
-  padding: 2px 10px; /* Shrink padding */
+  padding: 2px 10px;
 }
 
 /* Logo styling */
 .logo {
-  transition: all 0.3s ease; /* Smooth size transition */
-  margin-right: 550px;
+  transition: all 0.3s ease;
+  margin-right: 0;
 }
 
 .logo-large {
-  height: 106px; /* Default size at the top */
+  height: 106px;
   width: 150px;
 }
 
 .logo-small {
-  height: 70px; /* Smaller size when scrolled */
+  height: 70px;
   width: 110px;
+}
+
+/* Mobile menu styling */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--offwhite);
+  z-index: 40;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-menu.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Hamburger menu animation */
+.menu-open div:first-child {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-open div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-open div:last-child {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Ensure the button stays on top */
+button.menu-open {
+  position: relative;
+  z-index: 50;
+}
+
+/* Media query for desktop */
+@media (min-width: 768px) {
+  .logo {
+    margin-right: 550px;
+  }
+  
+  .mobile-menu {
+    display: none !important;
+  }
 }

@@ -1,7 +1,6 @@
 "use client";
 
 import Header from "./components/Header/Header";
-import Slider from "./components/Slider/Slider";
 import Map from "./components/Map";
 import Footer from "./components/Footer/Footer";
 import ImageCarousel from "./components/ImageCarousel/Carousel";
@@ -63,8 +62,8 @@ export default function Home() {
     <main>
       <Analytics />
       <Header />
-      {/* Spacer to account for the fixed header */}
-      <div style={{ height: "116px" }}></div>
+
+      <div className="h-[80px] md:h-[116px]"></div>
 
       <section className="overlay-container">
         <div className="background-component">
@@ -72,36 +71,36 @@ export default function Home() {
         </div>
 
         <div className="absolute z-10">
-          <div className="text-shadow text-6xl mt-48 ml-16 tracking-wider">
+          <div className="text-shadow text-4xl md:text-6xl mt-24 md:mt-48 ml-4 md:ml-16 tracking-wider">
             Flushing
             <br />
             Relaxing Spa
           </div>
-          <div className="text-shadow text-2xl mt-8 ml-16 tracking-wider">
+          <div className="text-shadow text-xl md:text-2xl mt-4 md:mt-8 ml-4 md:ml-16 tracking-wider">
             SPA IN FLUSHING, NY
           </div>
         </div>
       </section>
 
       <section>
-        <div className="flex justify-center my-20 gap-11">
+        <div className="flex justify-center my-10 md:my-20 gap-6 md:gap-11">
           <div className="flex-row justify-center text-center items-center">
-            <img src="/wechat.svg" height="100px" width="100px" />
-            <p className="text-black text-2xl mt-3">微信</p>
+            <img src="/wechat.svg" className="h-16 w-16 md:h-[100px] md:w-[100px]" />
+            <p className="text-black text-xl md:text-2xl mt-3">微信</p>
           </div>
           <div className="flex-row justify-center text-center items-center">
-            <img src="/wechatqrcode.jpg" height="100px" width="100px" />
-            <p className="text-black text-2xl mt-3">WeChat</p>
+            <img src="/wechatqrcode.jpg" className="h-16 w-16 md:h-[100px] md:w-[100px]" />
+            <p className="text-black text-xl md:text-2xl mt-3">WeChat</p>
           </div>
         </div>
       </section>
 
       <section className="justify-center">
-        <div className="bg-offwhite rounded-3xl mx-64">
-          <h1 className="text-center text-5xl text-black p-12">
+        <div className="bg-offwhite rounded-3xl mx-4 md:mx-64">
+          <h1 className="text-center text-3xl md:text-5xl text-black p-6 md:p-12">
             Welcome To Our Practice
           </h1>
-          <p className="text-md px-8 pb-12 text-center text-black tracking-wider">
+          <p className="text-md px-4 md:px-8 pb-8 md:pb-12 text-center text-black tracking-wider">
             Flushing Relaxing Spa is a premier wellness center in the Flushing
             neighborhood of Queens in New York City, New York, offering
             authentic Chinese massage techniques rooted in ancient practices.
@@ -145,61 +144,59 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="bg-offwhite p-10 mt-10">
-          <h2 className="text-2xl mb-8 text-brown1">Customers Reviews</h2>
-          <h1 className="text-6xl text-shadow mb-20">What Our Clients Say</h1>
-
+        <div className="bg-offwhite p-6 md:p-10 mt-10">
+          <h2 className="text-xl md:text-2xl mb-4 md:mb-8 text-brown1">Customers Reviews</h2>
+          <h1 className="text-4xl md:text-6xl text-shadow mb-10 md:mb-20">What Our Clients Say</h1>
           <ReviewCarousel slides={slidesData} options={OPTIONS} />
         </div>
       </section>
 
       <section>
         <div className="bg-offwhite text-shadow text-center">
-          <h2 className="text-7xl p-10">Gallery</h2>
-          <p className="mb-12 mx-32">Immerse yourself in the tranquility and elegance of our space. Each corner of our spa is designed to provide relaxation, rejuvenation, and a sanctuary for your mind, body, and soul. Explore our gallery and get a glimpse of the experience waiting for you.</p>
+          <h2 className="text-4xl md:text-7xl p-6 md:p-10">Gallery</h2>
+          <p className="mb-8 mx-4 md:mb-12 md:mx-32">Immerse yourself in the tranquility and elegance of our space. Each corner of our spa is designed to provide relaxation, rejuvenation, and a sanctuary for your mind, body, and soul. Explore our gallery and get a glimpse of the experience waiting for you.</p>
           
-          <div className="flex p-8 gap-x-6">
-            <div className="flex-row gap-5">
-              <img className="mb-10 mt-6" src="gallery1.PNG"/>
-              <img className="mb-6" src="gallery2.PNG"/>
-              <img src="gallery3.PNG"/>
+          <div className="flex flex-col md:flex-row p-4 md:p-8 gap-4 md:gap-x-6">
+            <div className="flex-row gap-4 md:gap-5">
+              <img className="w-full mb-4 md:mb-10 md:mt-6" src="gallery1.PNG"/>
+              <img className="w-full mb-4 md:mb-6" src="gallery2.PNG"/>
+              <img className="w-full" src="gallery3.PNG"/>
             </div>
-            <div className="flex-row">
-              <img className="mb-6" src="gallery4.PNG"/>
-              <img className="mb-6" src="gallery5.PNG"/>
-              <img src="gallery6.PNG"/>
+            <div className="flex-row mt-4 md:mt-0">
+              <img className="w-full mb-4 md:mb-6" src="gallery4.PNG"/>
+              <img className="w-full mb-4 md:mb-6" src="gallery5.PNG"/>
+              <img className="w-full" src="gallery6.PNG"/>
             </div>
-            <div className="flex-row">
-              <img className="mb-10 mt-8" src="gallery7.PNG"/>
-              <img className="mb-6" src="gallery8.PNG"/>
-              <img src="gallery9.PNG"/>
+            <div className="flex-row mt-4 md:mt-0">
+              <img className="w-full mb-4 md:mb-10 md:mt-8" src="gallery7.PNG"/>
+              <img className="w-full mb-4 md:mb-6" src="gallery8.PNG"/>
+              <img className="w-full" src="gallery9.PNG"/>
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <h2 className="text-5xl text-center my-16 text-shadow">
+        <h2 className="text-3xl md:text-5xl text-center my-8 md:my-16 text-shadow">
           Our Locations
         </h2>
 
-        <div className="flex justify-center px-6 pb-4">
+        <div className="flex flex-col md:flex-row justify-center px-4 md:px-6 pb-4">
           <Map />
 
-          <div className="w-4/12 h-5/6 bg-offwhite p-6 rounded-lg shadow-md relative">
-            {/* Content */}
+          <div className="w-full md:w-4/12 h-5/6 bg-offwhite p-4 md:p-6 rounded-lg shadow-md relative mt-4 md:mt-0">
             <div className="relative">
-              <h2 className="text-3xl font-semibold text-brown1">Queens</h2>
-              <p className="mt-5 text-sm text-shadow">
+              <h2 className="text-2xl md:text-3xl font-semibold text-brown1">Queens</h2>
+              <p className="mt-3 md:mt-5 text-sm text-shadow">
                 136-46 41st Ave Unit 1E
                 <br />
                 Flushing, NY 11355
               </p>
 
-              <h3 className="mt-5 text-sm font-medium text-gray-900">
+              <h3 className="mt-3 md:mt-5 text-sm font-medium text-gray-900">
                 Hours Of Operation:
               </h3>
-              <ul className="mt-6 text-sm space-y-2 text-shadow">
+              <ul className="mt-4 md:mt-6 text-sm space-y-2 text-shadow">
                 <li>Monday: 10:00 AM - 1:00 AM</li>
                 <li>Tuesday: 10:00 AM - 1:00 AM</li>
                 <li>Wednesday: 10:00 AM - 1:00 AM</li>
@@ -209,12 +206,8 @@ export default function Home() {
                 <li>Sunday: 10:00 AM - 1:00 AM</li>
               </ul>
 
-              {/* Buttons */}
               <div className="mt-6 flex space-x-4">
-                {/* <button className="px-6 py-3 bg-purple-700 text-white font-medium rounded-lg hover:bg-purple-800">
-                  Schedule Appointment
-                </button> */}
-                <button className="py-3 px-7 text-sm bg-grassgreen text-shadow font-medium rounded-full hover:bg-purple-800">
+                <button className="py-3 px-5 md:px-7 text-sm bg-grassgreen text-shadow font-medium rounded-full hover:bg-purple-800">
                   Call Us
                 </button>
               </div>
