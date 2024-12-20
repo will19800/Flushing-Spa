@@ -18,6 +18,15 @@ type PropType = {
   options?: EmblaOptionsType;
 };
 
+const OPTIONS: EmblaOptionsType = {
+  loop: true,
+  align: "center",
+  skipSnaps: false,
+  containScroll: "trimSnaps",
+  dragFree: false,
+  startIndex: 1,
+};
+
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);

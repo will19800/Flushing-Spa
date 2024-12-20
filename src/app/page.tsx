@@ -184,7 +184,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-center px-4 md:px-6 pb-4">
           <Map />
 
-          <div className="w-full md:w-4/12 h-5/6 bg-offwhite p-4 md:p-6 rounded-lg shadow-md relative mt-4 md:mt-0">
+          <div className="w-full md:w-/12 h-5/6 bg-offwhite p-4 md:p-6 rounded-lg shadow-md relative mt-4 md:mt-0">
             <div className="relative">
               <h2 className="text-2xl md:text-3xl font-semibold text-brown1">Queens</h2>
               <p className="mt-3 md:mt-5 text-sm text-shadow">
