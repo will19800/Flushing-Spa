@@ -102,7 +102,7 @@ export default function Home() {
       <section className="justify-center">
         <div className="bg-offwhite rounded-3xl mx-4 md:mx-64">
           <h1 className="text-center text-3xl md:text-5xl text-black p-6 md:p-12">
-            Welcome To Our Practice
+            Welcome To Our Spa
           </h1>
           <p className="text-md px-4 md:px-8 pb-8 md:pb-12 text-center text-black tracking-wider">
             Flushing Relaxing Spa is a premier wellness center in the Flushing

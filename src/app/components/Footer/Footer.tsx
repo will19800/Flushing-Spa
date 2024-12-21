@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import "./Footer.css";
 
 export default function Footer() {
   return (
     <main>
-      <div className="bg-offwhite flex mt-8">
-        <div className="py-11 ml-56 text-black">
+      <div className="footer-container bg-offwhite flex mt-8">
+        <div className="footer-info py-11 text-black">
           <p className="font-extrabold text-xl mb-4">Flushing Relaxing Spa</p>
           <p className="mb-4">Phone (appointments): 929-391-0284</p>
           <p className="mb-4">
@@ -13,9 +14,9 @@ export default function Footer() {
           </p>
         </div>
 
-        <span className="block w-0.5 h-32 bg-black my-8 mx-12"></span>
+        <span className="footer-divider block bg-black"></span>
 
-        <div className="pt-11">
+        <div className="footer-links">
           <Link href="/pages/privacyPage" className="text-black mr-8">
             PRIVACY POLICY
           </Link>

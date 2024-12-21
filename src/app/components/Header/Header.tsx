@@ -85,14 +85,14 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="{/about}"
+              href="/pages/aboutPage"
               className="text-black text-3xl hover:text-gray-600 transition-colors"
               onClick={toggleMenu}
             >
               About
             </Link>
             <Link
-              href="{/pricing}"
+              href="/pages/servicesPage"
               className="text-black text-3xl hover:text-gray-600 transition-colors"
               onClick={toggleMenu}
             >

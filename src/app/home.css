@@ -92,3 +92,52 @@
     height: 100vh; /* Full height for desktop */
   }
 }
+
+
+
+
+/* Location section styles */
+.location-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem 1rem;
+  gap: 1.5rem;
+}
+
+.location-info {
+  width: 33.333333%;
+  height: 83.333333%;
+  background-color: var(--offwhite);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .location-container {
+    flex-direction: column;
+    padding: 0 1rem 1rem;
+  }
+
+  .location-info {
+    width: 100%;
+    order: -1; /* Puts info box above map */
+    margin-bottom: 1rem;
+  }
+  
+  .map-container {
+    width: 100%;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .location-container {
+    flex-direction: row;
+  }
+  
+  .map-container {
+    flex: 1;
+  }
+}
