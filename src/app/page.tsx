@@ -65,18 +65,17 @@ export default function Home() {
 
       <div className="h-[80px] md:h-[116px]"></div>
 
-      <section className="overlay-container">
+      <section className="hero-section">
         <div className="background-component">
           <ImageCarousel slides={SLIDES} options={OPTIONS} />
         </div>
-
         <div className="absolute z-10">
-          <div className="text-shadow text-4xl md:text-6xl mt-24 md:mt-48 ml-4 md:ml-16 tracking-wider">
+          <div className="text-shadow hero-title tracking-wider">
             Flushing
             <br />
             Relaxing Spa
           </div>
-          <div className="text-shadow text-xl md:text-2xl mt-4 md:mt-8 ml-4 md:ml-16 tracking-wider">
+          <div className="text-shadow hero-subtitle tracking-wider">
             SPA IN FLUSHING, NY
           </div>
         </div>
@@ -177,26 +176,24 @@ export default function Home() {
       </section>
 
       <section>
-        <h2 className="text-3xl md:text-5xl text-center my-8 md:my-16 text-shadow">
-          Our Locations
-        </h2>
+        <h2 className="text-5xl text-center text-shadow my-16">Our Locations</h2>
 
-        <div className="flex flex-col md:flex-row justify-center px-4 md:px-6 pb-4">
+        <div className="flex flex-row justify-center px-6 pb-4">
           <Map />
 
-          <div className="w-full md:w-/12 h-5/6 bg-offwhite p-4 md:p-6 rounded-lg shadow-md relative mt-4 md:mt-0">
+          <div className="w-4/12 h-5/6 text-shadow bg-offwhite p-6 rounded-lg shadow-md relative">
             <div className="relative">
-              <h2 className="text-2xl md:text-3xl font-semibold text-brown1">Queens</h2>
-              <p className="mt-3 md:mt-5 text-sm text-shadow">
+              <h2 className="text-3xl font-semibold text-brown1">Queens</h2>
+              <p className="mt-5">
                 136-46 41st Ave Unit 1E
                 <br />
                 Flushing, NY 11355
               </p>
 
-              <h3 className="mt-3 md:mt-5 text-sm font-medium text-gray-900">
+              <h3 className="mt-5 text-sm font-medium text-gray-900">
                 Hours Of Operation:
               </h3>
-              <ul className="mt-4 md:mt-6 text-sm space-y-2 text-shadow">
+              <ul className="mt-6 text-sm space-y-2">
                 <li>Monday: 10:00 AM - 1:00 AM</li>
                 <li>Tuesday: 10:00 AM - 1:00 AM</li>
                 <li>Wednesday: 10:00 AM - 1:00 AM</li>
@@ -207,7 +204,7 @@ export default function Home() {
               </ul>
 
               <div className="mt-6 flex space-x-4">
-                <button className="py-3 px-5 md:px-7 text-sm bg-grassgreen text-shadow font-medium rounded-full hover:bg-purple-800">
+                <button className="py-3 px-7 text-sm bg-grassgreen font-medium rounded-full hover:bg-purple-800">
                   Call Us
                 </button>
               </div>
