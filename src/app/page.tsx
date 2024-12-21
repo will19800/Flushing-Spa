@@ -17,7 +17,6 @@ export default function Home() {
     skipSnaps: false,
     containScroll: false,
     watchDrag: false,
-
   };
 
   const SLIDES = ["/spa1.png", "/spa2.png", "/spa3.png", "/spa4.png"];
@@ -84,11 +83,17 @@ export default function Home() {
       <section>
         <div className="flex justify-center my-10 md:my-20 gap-6 md:gap-11">
           <div className="flex-row justify-center text-center items-center">
-            <img src="/wechat.svg" className="h-16 w-16 md:h-[100px] md:w-[100px]" />
+            <img
+              src="/wechat.svg"
+              className="h-16 w-16 md:h-[100px] md:w-[100px]"
+            />
             <p className="text-black text-xl md:text-2xl mt-3">微信</p>
           </div>
           <div className="flex-row justify-center text-center items-center">
-            <img src="/wechatqrcode.jpg" className="h-16 w-16 md:h-[100px] md:w-[100px]" />
+            <img
+              src="/wechatqrcode.jpg"
+              className="h-16 w-16 md:h-[100px] md:w-[100px]"
+            />
             <p className="text-black text-xl md:text-2xl mt-3">WeChat</p>
           </div>
         </div>
@@ -105,8 +110,8 @@ export default function Home() {
             authentic Chinese massage techniques rooted in ancient practices.
             The center is led by a team of highly skilled and certified massage
             therapists, dedicated to delivering exceptional care and relaxation.
-            The spa has been transforming the well-being of clients since
-            its establishment in 2000.
+            The spa has been transforming the well-being of clients since its
+            establishment in 2000.
             <br />
             <br />
             Flushing Relaxing Spa specializes in a variety of massage therapies,
@@ -144,8 +149,12 @@ export default function Home() {
 
       <section>
         <div className="bg-offwhite p-6 md:p-10 mt-10">
-          <h2 className="text-xl md:text-2xl mb-4 md:mb-8 text-brown1">Customers Reviews</h2>
-          <h1 className="text-4xl md:text-6xl text-shadow mb-10 md:mb-20">What Our Clients Say</h1>
+          <h2 className="text-xl md:text-2xl mb-4 md:mb-8 text-brown1">
+            Customers Reviews
+          </h2>
+          <h1 className="text-4xl md:text-6xl text-shadow mb-10 md:mb-20">
+            What Our Clients Say
+          </h1>
           <ReviewCarousel slides={slidesData} options={OPTIONS} />
         </div>
       </section>
@@ -153,30 +162,43 @@ export default function Home() {
       <section>
         <div className="bg-offwhite text-shadow text-center">
           <h2 className="text-4xl md:text-7xl p-6 md:p-10">Gallery</h2>
-          <p className="mb-8 mx-4 md:mb-12 md:mx-32">Immerse yourself in the tranquility and elegance of our space. Each corner of our spa is designed to provide relaxation, rejuvenation, and a sanctuary for your mind, body, and soul. Explore our gallery and get a glimpse of the experience waiting for you.</p>
-          
+          <p className="mb-8 mx-4 md:mb-12 md:mx-32">
+            Immerse yourself in the tranquility and elegance of our space. Each
+            corner of our spa is designed to provide relaxation, rejuvenation,
+            and a sanctuary for your mind, body, and soul. Explore our gallery
+            and get a glimpse of the experience waiting for you.
+          </p>
+
           <div className="flex flex-col md:flex-row p-4 md:p-8 gap-4 md:gap-x-6">
             <div className="flex-row gap-4 md:gap-5">
-              <img className="w-full mb-4 md:mb-10 md:mt-6" src="gallery1.PNG"/>
-              <img className="w-full mb-4 md:mb-6" src="gallery2.PNG"/>
-              <img className="w-full" src="gallery3.PNG"/>
+              <img
+                className="w-full mb-4 md:mb-10 md:mt-6"
+                src="gallery1.PNG"
+              />
+              <img className="w-full mb-4 md:mb-6" src="gallery2.PNG" />
+              <img className="w-full" src="gallery3.PNG" />
             </div>
             <div className="flex-row mt-4 md:mt-0">
-              <img className="w-full mb-4 md:mb-6" src="gallery4.PNG"/>
-              <img className="w-full mb-4 md:mb-6" src="gallery5.PNG"/>
-              <img className="w-full" src="gallery6.PNG"/>
+              <img className="w-full mb-4 md:mb-6" src="gallery4.PNG" />
+              <img className="w-full mb-4 md:mb-6" src="gallery5.PNG" />
+              <img className="w-full" src="gallery6.PNG" />
             </div>
             <div className="flex-row mt-4 md:mt-0">
-              <img className="w-full mb-4 md:mb-10 md:mt-8" src="gallery7.PNG"/>
-              <img className="w-full mb-4 md:mb-6" src="gallery8.PNG"/>
-              <img className="w-full" src="gallery9.PNG"/>
+              <img
+                className="w-full mb-4 md:mb-10 md:mt-8"
+                src="gallery7.PNG"
+              />
+              <img className="w-full mb-4 md:mb-6" src="gallery8.PNG" />
+              <img className="w-full" src="gallery9.PNG" />
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <h2 className="text-5xl text-center text-shadow my-16">Our Locations</h2>
+        <h2 className="text-5xl text-center text-shadow my-16">
+          Our Locations
+        </h2>
 
         <div className="flex flex-row justify-center px-6 pb-4">
           <Map />

@@ -23,7 +23,7 @@ export default function Header() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    document.body.style.overflow = !isMenuOpen ? 'hidden' : 'auto';
+    document.body.style.overflow = !isMenuOpen ? "hidden" : "auto";
   };
 
   return (
@@ -42,8 +42,8 @@ export default function Header() {
         </Link>
 
         {/*Only visible on mobile */}
-        <button 
-          className={`md:hidden ml-auto mr-4 p-2 z-50 ${isMenuOpen ? 'menu-open' : ''}`}
+        <button
+          className={`md:hidden ml-auto mr-4 p-2 z-50 ${isMenuOpen ? "menu-open" : ""}`}
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -57,10 +57,10 @@ export default function Header() {
           <Link href="/" className="text-black">
             Home
           </Link>
-          <Link href="{/about}" className="text-black">
+          <Link href="/pages/aboutPage" className="text-black">
             About
           </Link>
-          <Link href="{/pricing}" className="text-black">
+          <Link href="/pages/servicesPage" className="text-black">
             Services
           </Link>
           <Link href="/pages/contactPage" className="text-black">
@@ -75,31 +75,31 @@ export default function Header() {
         </nav>
 
         {/* Full Screen Mobile Navigation */}
-        <div className={`mobile-menu ${isMenuOpen ? 'show' : ''}`}>
+        <div className={`mobile-menu ${isMenuOpen ? "show" : ""}`}>
           <nav className="flex flex-col items-center justify-center h-screen gap-8 bg-offwhite p-4">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="text-black text-3xl hover:text-gray-600 transition-colors"
               onClick={toggleMenu}
             >
               Home
             </Link>
-            <Link 
-              href="{/about}" 
+            <Link
+              href="{/about}"
               className="text-black text-3xl hover:text-gray-600 transition-colors"
               onClick={toggleMenu}
             >
               About
             </Link>
-            <Link 
-              href="{/pricing}" 
+            <Link
+              href="{/pricing}"
               className="text-black text-3xl hover:text-gray-600 transition-colors"
               onClick={toggleMenu}
             >
               Services
             </Link>
-            <Link 
-              href="/pages/contactPage" 
+            <Link
+              href="/pages/contactPage"
               className="text-black text-3xl hover:text-gray-600 transition-colors"
               onClick={toggleMenu}
             >
