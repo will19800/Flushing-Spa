@@ -3,6 +3,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import "./page.css";
 
 export default function ServicesPage() {
   return (
@@ -12,34 +13,35 @@ export default function ServicesPage() {
       <div style={{ height: "118px" }}></div>
 
       <section>
-        <div className="bg-shadow text-center">
-          <p className="px-44 py-24 text-lightwhite text-4xl font-extrabold tracking-wider">
+        <div className="contact-header bg-shadow text-center">
+          <p className="contact-title px-44 py-24 text-lightwhite text-4xl font-extrabold tracking-wider">
             Services
           </p>
         </div>
       </section>
 
       <section>
-        <div className="flex p-16 ml-8">
+        <div className="services-content">
           <div>
-            <img src="/massage.jpg" alt="services" width={500} height={500} />
+            <img className="mb-10" src="/services2.JPG" alt="services" width={500} height={500} />
+            <img src="/services1.PNG" alt="services" width={500} height={500} />
           </div>
           <div className="ml-16 mt-8">
-            <h2 className="text-shadow text-6xl font-extrabold tracking-wider">
+            <h2 className="services-title text-shadow font-extrabold tracking-wider">
               Price List
             </h2>
             <div className="mt-8 flex-row text-2xl">
-              <div className="flex">
-                <div className="text-shadow mr-16 mb-16">
-                  <h2 className=" text-4xl font-bold tracking-wider mb-6">
+              <div className="item-container">
+                <div className="text-shadow mr-16 mb-8">
+                  <h2 className="item-title font-bold tracking-wider mb-6">
                     Relaxing Spa
                   </h2>
                   <p>30 MINS....................$30</p>
                   <p>60 MINS....................$40</p>
                   <p>90 MINS....................$60</p>
                 </div>
-                <div className="text-shadow">
-                  <h2 className=" text-4xl font-bold tracking-wider mb-6">
+                <div className="text-shadow mb-8">
+                  <h2 className="text-4xl font-bold tracking-wider mb-6">
                     Head Therapy
                   </h2>
                   <p>30 MINS....................$30</p>
@@ -47,7 +49,7 @@ export default function ServicesPage() {
                   <p>90 MINS....................$60</p>
                 </div>
               </div>
-              <div className="flex mb-8">
+              <div className="item-container mb-8">
                 <div className="text-shadow mr-16">
                   <h2 className=" text-4xl font-bold tracking-wider mb-6">
                     Facial

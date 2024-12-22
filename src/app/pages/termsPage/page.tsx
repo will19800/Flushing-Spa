@@ -2,6 +2,7 @@
 
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
+import "./page.css";
 
 export default function Home() {
   return (
@@ -11,15 +12,15 @@ export default function Home() {
       <div style={{ height: "118px" }}></div>
 
       <section>
-        <div className="bg-shadow text-center">
-          <p className="px-44 py-24 text-lightwhite text-4xl font-extrabold">
+        <div className="contact-header bg-shadow text-center">
+          <p className="contact-title px-44 py-24 text-lightwhite text-4xl font-extrabold">
             Terms & Conditions
           </p>
         </div>
       </section>
 
       <section>
-        <div className="text-black mx-56">
+        <div className="container text-black">
           <h2 className="mb-6 mt-20 text-xl">TERMS OF USE</h2>
           <p className="text-gray-600">
             Flushing Relaxing Spa ("we," "us," or "our") provides this website

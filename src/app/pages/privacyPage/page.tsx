@@ -2,6 +2,7 @@
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import "./page.css";
 
 export default function Home() {
   return (
@@ -11,16 +12,16 @@ export default function Home() {
       <div style={{ height: "118px" }}></div>
 
       <section>
-        <div className="bg-shadow text-center">
-          <p className="px-44 py-24 text-lightwhite text-4xl font-extrabold tracking-wider">
+        <div className="contact-header bg-shadow text-center">
+          <p className="contact-title px-44 py-24 text-lightwhite text-4xl font-extrabold tracking-wider">
             Privacy Policy
           </p>
         </div>
       </section>
 
       <section>
-        <div className="text-black mx-56">
-          <h2 className="mb-6 mt-20 text-xl">PRIVACY STATEMENT</h2>
+        <div className="container text-black">
+          <h2 className="mb-6 mt-20 text-black text-xl">PRIVACY STATEMENT</h2>
           <p className="text-gray-600">
             We are committed to protecting your privacy and developing
             technology that gives you the most powerful and safe online

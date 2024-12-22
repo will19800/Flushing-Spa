@@ -2,7 +2,7 @@
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import LocationBar from "../../components/LocationBar";
+import "./page.css";
 
 export default function Home() {
   return (
@@ -12,20 +12,26 @@ export default function Home() {
       <div style={{ height: "118px" }}></div>
 
       <section>
-        <div className="bg-shadow text-center mb-12">
-          <p className="px-44 py-24 text-lightwhite text-4xl font-extrabold">
+        <div className="contact-header bg-shadow text-center mb-12">
+          <p className="contact-title px-44 py-24 text-lightwhite text-4xl font-extrabold">
             About
           </p>
         </div>
       </section>
 
       <section>
-        <div className="flex p-16 ml-8">
+        <div className="container">
           <div>
-            <img className="mb-8" src="/gallery4.PNG" alt="services" width={1000} height={450} />
+            <img
+              className="mb-8"
+              src="/gallery4.PNG"
+              alt="services"
+              width={1000}
+              height={450}
+            />
             <img src="/face.JPG" alt="services" width={1000} height={450} />
           </div>
-          <div className="ml-16 text-shadow mb-8">
+          <div className="text-container text-shadow mb-8">
             <h2 className="text-6xl font-extrabold tracking-wider">
               Who We Are
             </h2>
