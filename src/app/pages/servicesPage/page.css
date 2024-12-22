@@ -35,9 +35,25 @@
         font-size: 2rem !important;
     }
 
+    .item-title1 {
+        font-size: 2rem !important;
+        margin-top: 2rem;
+    }
+
     .item-container {
         display: flex;
         flex-direction: column;
+        margin-left: -2rem;
+    }
+
+    .combo-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: -2rem;
+    }
+
+    .font-class {
+        font-size: 1rem !important;
     }
   }
   
@@ -59,7 +75,7 @@
         display: flex;
         flex-direction: row;
         padding: 4rem;
-        margin-left: 2rem;
+        margin-left: 9rem;
     }
 
     .services-title {
@@ -71,8 +87,21 @@
         font-size: 2.25rem !important;
     }
 
+    .item-title1 {
+        font-size: 2.25rem !important;
+    }
+
     .item-container {
         display: flex;
         flex-direction: row;
+    }
+
+    .combo-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .font-class {
+        font-size: 1.5rem !important;
     }
   }
