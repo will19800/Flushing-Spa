@@ -70,8 +70,8 @@ export default function ServicesPage() {
                 <h2 className="item-title font-bold tracking-wider mb-6">
                   Combo
                 </h2>
-                <p>Relaxing Spa + Foot Rub 90 MINS....................$55</p>
-                <p>
+                <p className="combo-text-class">Relaxing Spa + Foot Rub 90 MINS....................$55</p>
+                <p className="combo-text-class">
                   Relaxing Spa + Facial 90 MINS..........................$60
                 </p>
               </div>

@@ -115,7 +115,7 @@ export default function Home() {
             <br />
             <br />
             Flushing Relaxing Spa specializes in a variety of massage therapies,
-            including Tuina (推拿) therapeutic massage, acupressure, and gua sha
+            including Tuina (推拿) therapeutic massage, acupressure, oil push, and gua sha
             for muscle tension relief and stress reduction. The spa also offers
             reflexology, hot stone therapy, and cupping therapy, tailored to
             each client’s unique needs. Harmony and balance are at the heart of
@@ -170,26 +170,47 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col md:flex-row p-4 md:p-8 gap-4 md:gap-x-6">
-            <div className="flex-row gap-4 md:gap-5">
+            <div className="w-full md:w-1/3 flex flex-col gap-4 md:gap-5">
               <img
-                className="w-full mb-4 md:mb-10 md:mt-6"
+                className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6"
                 src="gallery1.PNG"
               />
-              <img className="w-full mb-4 md:mb-6" src="gallery2.PNG" />
-              <img className="w-full" src="gallery3.PNG" />
-            </div>
-            <div className="flex-row mt-4 md:mt-0">
-              <img className="w-full mb-4 md:mb-6" src="gallery4.PNG" />
-              <img className="w-full mb-4 md:mb-6" src="gallery5.PNG" />
-              <img className="w-full" src="gallery6.PNG" />
-            </div>
-            <div className="flex-row mt-4 md:mt-0">
-              <img
-                className="w-full mb-4 md:mb-10 md:mt-8"
-                src="gallery7.PNG"
+              <img 
+                className="w-full h-80 object-cover mb-4 md:mb-6" 
+                src="gallery2.PNG" 
               />
-              <img className="w-full mb-4 md:mb-6" src="gallery8.PNG" />
-              <img className="w-full" src="gallery9.PNG" />
+              <img 
+                className="w-full h-80 object-cover" 
+                src="gallery3.PNG" 
+              />
+              <img
+                className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6"
+                src="gallery11.JPG"
+              />
+              <img 
+                className="w-full h-80 object-cover mb-4 md:mb-6" 
+                src="gallery12.JPG" 
+              />
+              <img 
+                className="w-full h-80 object-cover" 
+                src="gallery13.JPG" 
+              />
+            </div>
+            <div className="w-full md:w-1/3 flex flex-col gap-4">
+              <img className="w-full h-80 object-cover object-top mb-4 md:mb-6" src="gallery4.PNG" />
+              <img className="w-full h-80 object-cover mb-4 md:mb-6" src="gallery5.PNG" />
+              <img className="w-full h-80 object-cover" src="gallery6.PNG" />
+              <img className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6" src="gallery14.PNG" />
+              <img className="w-full h-80 object-cover mb-4 md:mb-6" src="gallery15.PNG" />
+              <img className="w-full h-80 object-cover" src="gallery16.PNG" />
+            </div>
+            <div className="w-full md:w-1/3 flex flex-col gap-4">
+              <img className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-8" src="gallery7.PNG" />
+              <img className="w-full h-80 object-cover mb-4 md:mb-6" src="gallery8.PNG" />
+              <img className="w-full h-80 object-cover" src="gallery9.PNG" />
+              <img className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6" src="gallery17.JPG" />
+              <img className="w-full h-80 object-cover mb-4 md:mb-6" src="gallery18.PNG" />
+              <img className="w-full h-80 object-cover" src="gallery10.JPG" />
             </div>
           </div>
         </div>
