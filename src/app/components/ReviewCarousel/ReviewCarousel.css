@@ -117,12 +117,22 @@
 
 /* Mobile specific review card adjustments */
 @media (max-width: 480px) {
-  .review-card {
-    padding: 1rem;
+  .embla {
+    --slide-height: 24rem;
+    --slide-size: 100%;
   }
 
-  .review-card p {
+  .review-card {
+    width: 100%;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .review-card-text {
     font-size: 0.875rem;
+    height: 11rem;
+    overflow-y: auto;
+    margin-top: -1rem;
   }
 
   .review-card .customer-info {

@@ -43,7 +43,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                   <span className="text-pink-400 text-7xl font-bold">“</span>
                 </div>
 
-                <p className="text-gray-800 text-md h-60">{slide.quote}</p>
+                <p className="review-card-text text-gray-800 text-md h-60">{slide.quote}</p>
 
                 <span className="ml-8 block w-5/6 h-0.5 bg-shadow mb-8" />
 

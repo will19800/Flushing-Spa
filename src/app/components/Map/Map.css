@@ -1,0 +1,13 @@
+.map-container {
+    height: 465px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    .map-container {
+        height: 400px;
+        width: 100%;
+    }
+}

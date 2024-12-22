@@ -95,7 +95,6 @@
 
 
 
-
 /* Location section styles */
 .location-container {
   display: flex;
@@ -115,19 +114,29 @@
 
 /* Mobile styles */
 @media (max-width: 767px) {
-  .location-container {
-    flex-direction: column;
-    padding: 0 1rem 1rem;
+  /* Target the container */
+  div[class*="flex flex-row justify-center"] {
+    flex-direction: column !important;
+    padding: 1rem;
+    gap: 1rem;
   }
 
-  .location-info {
-    width: 100%;
-    order: -1; /* Puts info box above map */
-    margin-bottom: 1rem;
-  }
-  
+  /* Target the map container */
   .map-container {
-    width: 100%;
+    width: 100% !important;
+    order: -1;
+  }
+
+  /* Target the info box */
+  div[class*="w-3/12"] {
+    width: 100% !important;
+    margin-top: 1rem;
+  }
+
+  /* Adjust the section title spacing */
+  .text-5xl.text-center.text-shadow.my-16 {
+    margin: 2rem 0;
+    font-size: 2rem;
   }
 }
 

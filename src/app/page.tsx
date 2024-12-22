@@ -1,7 +1,7 @@
 "use client";
 
 import Header from "./components/Header/Header";
-import Map from "./components/Map";
+import Map from "./components/Map/Map";
 import Footer from "./components/Footer/Footer";
 import ImageCarousel from "./components/ImageCarousel/Carousel";
 import ReviewCarousel from "./components/ReviewCarousel/ReviewCarousel";
@@ -203,7 +203,7 @@ export default function Home() {
         <div className="flex flex-row justify-center px-6 pb-4">
           <Map />
 
-          <div className="w-4/12 h-5/6 text-shadow bg-offwhite p-6 rounded-lg shadow-md relative">
+          <div className="w-3/12 h-5/6 text-shadow bg-offwhite p-6 rounded-lg shadow-md relative">
             <div className="relative">
               <h2 className="text-3xl font-semibold text-brown1">Queens</h2>
               <p className="mt-5">
