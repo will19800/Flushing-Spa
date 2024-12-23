@@ -19,7 +19,10 @@ export default function Home() {
     watchDrag: false,
   };
 
-  const SLIDES = ["/spa1.png", "/spa2.png", "/spa3.png", "/spa4.png"];
+  // const SLIDES = ["/spa1.png", "/spa2.png", "/spa3.png", "/spa4.png"];
+
+  const SLIDES = ["/cover.jpg"];
+
 
   const slidesData = [
     {
