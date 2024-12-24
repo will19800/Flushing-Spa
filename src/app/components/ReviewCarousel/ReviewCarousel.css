@@ -80,7 +80,7 @@
 /* Tablets - 481px to 768px */
 @media (min-width: 481px) {
   .embla {
-    --slide-height: 26rem;
+    --slide-height: 30rem;
     --slide-size: 60%;
   }
 }
@@ -88,8 +88,8 @@
 /* Small laptops - 769px to 1024px */
 @media (min-width: 769px) {
   .embla {
-    --slide-height: 28rem;
-    --slide-size: 40%;
+    --slide-height: 30rem;
+    --slide-size: 45%;
   }
 }
 
@@ -106,6 +106,7 @@
   .embla {
     --slide-height: 32rem;
     --slide-size: 33.333%;
+    --slide-spacing: 6rem;
   }
 }
 

@@ -1,115 +1,115 @@
 /* Base styles */
 .contact-header {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.contact-title {
+  padding: 6rem 11rem;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .contact-header {
+    margin-bottom: 2rem;
+  }
+
+  .contact-title {
+    padding: 3rem 1rem;
+    font-size: 2rem;
+  }
+
+  .services-content {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 2rem !important;
+  }
+
+  .services-title {
+    font-size: 2.5rem !important;
+  }
+
+  .item-title {
+    font-size: 2rem !important;
+  }
+
+  .item-title1 {
+    font-size: 2rem !important;
+    margin-top: 2rem;
+  }
+
+  .item-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: -2rem;
+  }
+
+  .combo-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: -2rem;
+  }
+
+  .font-class {
+    font-size: 1rem !important;
+  }
+
+  .combo-text-class {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-title {
+    padding: 4rem 2rem;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  /* Keep original desktop styles */
+  .px-44.py-24 {
+    padding: 6rem 11rem; /* Original desktop padding */
+  }
+
+  .services-content {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+    margin-left: 9rem;
+  }
+
+  .services-title {
+    font-size: 3.75rem !important;
     text-align: center;
   }
-  
-  .contact-title {
-    padding: 6rem 11rem;
-    font-size: 2.25rem;
-    font-weight: 800;
+
+  .item-title {
+    font-size: 2.25rem !important;
   }
-  
-  /* Mobile styles */
-  @media (max-width: 767px) {
-    .contact-header {
-      margin-bottom: 2rem;
-    }
-  
-    .contact-title {
-      padding: 3rem 1rem;
-      font-size: 2rem;
-    }
 
-    .services-content {
-        display: flex !important;
-        flex-direction: column !important;
-        padding: 2rem !important;
-    }
-
-    .services-title {
-        font-size: 2.5rem !important;
-    }
-
-    .item-title {
-        font-size: 2rem !important;
-    }
-
-    .item-title1 {
-        font-size: 2rem !important;
-        margin-top: 2rem;
-    }
-
-    .item-container {
-        display: flex;
-        flex-direction: column;
-        margin-left: -2rem;
-    }
-
-    .combo-container {
-        display: flex;
-        flex-direction: column;
-        margin-left: -2rem;
-    }
-
-    .font-class {
-        font-size: 1rem !important;
-    }
-
-    .combo-text-class {
-        font-size: 0.9rem !important;
-    }
+  .item-title1 {
+    font-size: 2.25rem !important;
   }
-  
-  /* Tablet styles */
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .contact-title {
-      padding: 4rem 2rem;
-    }
+
+  .item-container {
+    display: flex;
+    flex-direction: row;
   }
-  
-  /* Desktop styles */
-  @media (min-width: 1024px) {
-    /* Keep original desktop styles */
-    .px-44.py-24 {
-      padding: 6rem 11rem;  /* Original desktop padding */
-    }
 
-    .services-content {
-        display: flex;
-        flex-direction: row;
-        padding: 4rem;
-        margin-left: 9rem;
-    }
-
-    .services-title {
-        font-size: 3.75rem !important;
-        text-align: center;
-    }
-
-    .item-title {
-        font-size: 2.25rem !important;
-    }
-
-    .item-title1 {
-        font-size: 2.25rem !important;
-    }
-
-    .item-container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .combo-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .font-class {
-        font-size: 1.5rem !important;
-    }
-
-    .combo-text-class {
-        font-size: 1.5rem !important;
-    }   
+  .combo-container {
+    display: flex;
+    flex-direction: column;
   }
+
+  .font-class {
+    font-size: 1.5rem !important;
+  }
+
+  .combo-text-class {
+    font-size: 1.5rem !important;
+  }
+}

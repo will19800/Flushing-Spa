@@ -66,12 +66,12 @@ export default function Header() {
           <Link href="/pages/contactPage" className="text-black">
             Contact
           </Link>
-          <Link
-            href="/LoginPage"
+          <a
+            href="tel:929-391-0284"
             className="p-4 rounded-full text-shadow bg-grassgreen"
           >
             929-391-0284
-          </Link>
+          </a>
         </nav>
 
         {/* Full Screen Mobile Navigation */}

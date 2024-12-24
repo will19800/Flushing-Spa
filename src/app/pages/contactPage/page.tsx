@@ -4,7 +4,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Map from "../../components/Map/Map";
 import LocationBar from "../../components/LocationBar/LocationBar";
-import "./page.css"
+import "./page.css";
 
 export default function Home() {
   return (

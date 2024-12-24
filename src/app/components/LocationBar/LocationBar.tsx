@@ -34,9 +34,18 @@ export default function LocationBar() {
             </ul>
 
             <div className="mt-6 flex space-x-4">
-              <button className="py-3 px-7 text-sm bg-grassgreen font-medium rounded-full hover:bg-purple-800">
+              <a
+                href="tel:929-391-0284"
+                className="py-3 px-7 text-sm bg-grassgreen font-medium rounded-full hover:bg-green-600"
+              >
                 Call Us
-              </button>
+              </a>
+              <a
+                href="https://search.google.com/local/writereview?placeid=ChIJiR8gBgBhwokR7X0uasZR98o"
+                className="py-3 px-7 text-sm bg-grassgreen font-medium rounded-full hover:bg-green-600"
+              >
+                Leave Us a Review
+              </a>
             </div>
           </div>
         </div>

@@ -23,7 +23,6 @@ export default function Home() {
 
   const SLIDES = ["/cover.jpg"];
 
-
   const slidesData = [
     {
       quote: "after a hard working day i had my body full relaxed. Thankx",
@@ -84,21 +83,30 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="flex justify-center my-10 md:my-20 gap-6 md:gap-11">
-          <div className="flex-row justify-center text-center items-center">
-            <img
-              src="/wechat.svg"
-              className="h-16 w-16 md:h-[100px] md:w-[100px]"
-            />
-            <p className="text-black text-xl md:text-2xl mt-3">微信</p>
+        <div className="flex flex-col items-center my-10 md:my-20 gap-6 md:gap-11">
+          <div className="flex flex-row gap-6 md:gap-11">
+            <div className="text-center">
+              <img
+                src="/wechat.svg"
+                className="h-16 w-16 md:h-[100px] md:w-[100px]"
+              />
+              <p className="text-black text-xl md:text-2xl mt-3">微信</p>
+            </div>
+            <div className="text-center">
+              <img
+                src="/wechatqrcode.jpg"
+                className="h-16 w-16 md:h-[100px] md:w-[100px]"
+              />
+              <p className="text-black text-xl md:text-2xl mt-3">WeChat</p>
+            </div>
           </div>
-          <div className="flex-row justify-center text-center items-center">
-            <img
-              src="/wechatqrcode.jpg"
-              className="h-16 w-16 md:h-[100px] md:w-[100px]"
-            />
-            <p className="text-black text-xl md:text-2xl mt-3">WeChat</p>
-          </div>
+          
+          <a
+            href="https://search.google.com/local/writereview?placeid=ChIJiR8gBgBhwokR7X0uasZR98o"
+            className="py-3 px-7 text-lg text-shadow bg-grassgreen font-medium rounded-full hover:bg-green-600"
+          >
+            Leave Us a Review
+          </a>
         </div>
       </section>
 
@@ -118,12 +126,12 @@ export default function Home() {
             <br />
             <br />
             Flushing Relaxing Spa specializes in a variety of massage therapies,
-            including Tuina (推拿) therapeutic massage, acupressure, oil push, and gua sha
-            for muscle tension relief and stress reduction. The spa also offers
-            reflexology, hot stone therapy, and cupping therapy, tailored to
-            each client’s unique needs. Harmony and balance are at the heart of
-            every treatment, combining traditional Chinese medicine principles
-            with modern relaxation practices.
+            including Tuina (推拿) therapeutic massage, acupressure, oil push,
+            and gua sha for muscle tension relief and stress reduction. The spa
+            also offers reflexology, hot stone therapy, and cupping therapy,
+            tailored to each client’s unique needs. Harmony and balance are at
+            the heart of every treatment, combining traditional Chinese medicine
+            principles with modern relaxation practices.
             <br />
             <br />
             Additional services include full-body massages for improved
@@ -178,41 +186,59 @@ export default function Home() {
                 className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6"
                 src="gallery1.PNG"
               />
-              <img 
-                className="w-full h-80 object-cover mb-4 md:mb-6" 
-                src="gallery2.PNG" 
+              <img
+                className="w-full h-80 object-cover mb-4 md:mb-6"
+                src="gallery2.PNG"
               />
-              <img 
-                className="w-full h-80 object-cover" 
-                src="gallery3.PNG" 
-              />
+              <img className="w-full h-80 object-cover" src="gallery3.PNG" />
               <img
                 className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6"
                 src="gallery11.JPG"
               />
-              <img 
-                className="w-full h-80 object-cover mb-4 md:mb-6" 
-                src="gallery12.JPG" 
+              <img
+                className="w-full h-80 object-cover mb-4 md:mb-6"
+                src="gallery12.JPG"
               />
-              <img 
-                className="w-full h-80 object-cover" 
-                src="gallery13.JPG" 
-              />
+              <img className="w-full h-80 object-cover" src="gallery13.JPG" />
             </div>
             <div className="w-full md:w-1/3 flex flex-col gap-4">
-              <img className="w-full h-80 object-cover object-top mb-4 md:mb-6" src="gallery4.PNG" />
-              <img className="w-full h-80 object-cover mb-4 md:mb-6" src="gallery5.PNG" />
+              <img
+                className="w-full h-80 object-cover object-top mb-4 md:mb-6"
+                src="gallery4.PNG"
+              />
+              <img
+                className="w-full h-80 object-cover mb-4 md:mb-6"
+                src="gallery5.PNG"
+              />
               <img className="w-full h-80 object-cover" src="gallery6.PNG" />
-              <img className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6" src="gallery14.PNG" />
-              <img className="w-full h-80 object-cover mb-4 md:mb-6" src="gallery15.PNG" />
+              <img
+                className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6"
+                src="gallery14.PNG"
+              />
+              <img
+                className="w-full h-80 object-cover mb-4 md:mb-6"
+                src="gallery15.PNG"
+              />
               <img className="w-full h-80 object-cover" src="gallery16.PNG" />
             </div>
             <div className="w-full md:w-1/3 flex flex-col gap-4">
-              <img className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-8" src="gallery7.PNG" />
-              <img className="w-full h-80 object-cover mb-4 md:mb-6" src="gallery8.PNG" />
+              <img
+                className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-8"
+                src="gallery7.PNG"
+              />
+              <img
+                className="w-full h-80 object-cover mb-4 md:mb-6"
+                src="gallery8.PNG"
+              />
               <img className="w-full h-80 object-cover" src="gallery9.PNG" />
-              <img className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6" src="gallery17.JPG" />
-              <img className="w-full h-80 object-cover mb-4 md:mb-6" src="gallery18.PNG" />
+              <img
+                className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6"
+                src="gallery17.JPG"
+              />
+              <img
+                className="w-full h-80 object-cover mb-4 md:mb-6"
+                src="gallery18.PNG"
+              />
               <img className="w-full h-80 object-cover" src="gallery10.JPG" />
             </div>
           </div>

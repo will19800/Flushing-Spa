@@ -23,7 +23,13 @@ export default function ServicesPage() {
       <section>
         <div className="services-content">
           <div>
-            <img className="mb-10" src="/services2.JPG" alt="services" width={500} height={500} />
+            <img
+              className="mb-10"
+              src="/services2.JPG"
+              alt="services"
+              width={500}
+              height={500}
+            />
             <img src="/services1.PNG" alt="services" width={500} height={500} />
           </div>
           <div className="ml-16 mt-8">
@@ -70,7 +76,9 @@ export default function ServicesPage() {
                 <h2 className="item-title font-bold tracking-wider mb-6">
                   Combo
                 </h2>
-                <p className="combo-text-class">Relaxing Spa + Foot Rub 90 MINS....................$55</p>
+                <p className="combo-text-class">
+                  Relaxing Spa + Foot Rub 90 MINS....................$55
+                </p>
                 <p className="combo-text-class">
                   Relaxing Spa + Facial 90 MINS..........................$60
                 </p>
