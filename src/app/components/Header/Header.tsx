@@ -106,7 +106,7 @@ export default function Header() {
               Contact
             </Link>
             <Link
-              href="/LoginPage"
+              href="tel:929-391-0284"
               className="p-6 rounded-full text-shadow bg-grassgreen text-center text-2xl w-64 hover:bg-opacity-90 transition-colors"
               onClick={toggleMenu}
             >

@@ -5,12 +5,11 @@ import LocationBar from "./components/LocationBar/LocationBar";
 import Footer from "./components/Footer/Footer";
 import ImageCarousel from "./components/ImageCarousel/Carousel";
 import ReviewCarousel from "./components/ReviewCarousel/ReviewCarousel";
-import { Analytics } from "@vercel/analytics/react";
 import "./home.css";
-
 import { EmblaOptionsType } from "embla-carousel";
 
 export default function Home() {
+
   const OPTIONS: EmblaOptionsType = {
     loop: true,
     align: "center",
@@ -61,7 +60,6 @@ export default function Home() {
 
   return (
     <main>
-      <Analytics />
       <Header />
 
       <div className="h-[80px] md:h-[116px]"></div>

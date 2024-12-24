@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import { Amplify } from 'aws-amplify';
+import awsConfig from "./awsConfig"
 
 const roboto = Roboto({
   weight: ["300"], // Specify font weights you want to include
