@@ -120,7 +120,7 @@ export default function Home() {
             The center is led by a team of highly skilled and certified massage
             therapists, dedicated to delivering exceptional care and relaxation.
             The spa has been transforming the well-being of clients since its
-            establishment in 2000.
+            establishment in 2016.
             <br />
             <br />
             Flushing Relaxing Spa specializes in a variety of massage therapies,
