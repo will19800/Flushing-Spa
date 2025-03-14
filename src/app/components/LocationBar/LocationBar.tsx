@@ -24,13 +24,13 @@ export default function LocationBar() {
               Hours Of Operation:
             </h3>
             <ul className="mt-6 text-sm space-y-2">
-              <li>Monday: 11:00 AM - 11:00 PM</li>
-              <li>Tuesday: 11:00 AM - 11:00 PM</li>
-              <li>Wednesday: 11:00 AM - 11:00 PM</li>
-              <li>Thursday: 11:00 AM - 11:00 PM</li>
-              <li>Friday: 11:00 AM - 11:00 PM</li>
-              <li>Saturday: 11:00 AM - 11:00 PM</li>
-              <li>Sunday: 11:00 AM - 11:00 PM</li>
+              <li>Monday: 10:00 AM - 11:00 PM</li>
+              <li>Tuesday: 10:00 AM - 11:00 PM</li>
+              <li>Wednesday: 10:00 AM - 11:00 PM</li>
+              <li>Thursday: 10:00 AM - 11:00 PM</li>
+              <li>Friday: 10:00 AM - 11:00 PM</li>
+              <li>Saturday: 10:00 AM - 11:00 PM</li>
+              <li>Sunday: 10:00 AM - 11:00 PM</li>
             </ul>
 
             <div className="mt-6 flex space-x-4">
