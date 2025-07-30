@@ -44,7 +44,7 @@ export default function ServicesPage() {
                   </h2>
                   <p>30 MINS....................$30</p>
                   <p>60 MINS....................$40</p>
-                  <p>90 MINS....................$60</p>
+                  <p>90 MINS....................$65</p>
                 </div>
                 <div className="text-shadow mb-8">
                   <h2 className="item-title font-bold tracking-wider mb-6">
@@ -60,16 +60,16 @@ export default function ServicesPage() {
                   <h2 className="item-title font-bold tracking-wider mb-6">
                     Facial
                   </h2>
-                  <p>30 MINS....................$30</p>
-                  <p>60 MINS....................$60</p>
+                  <p>30 MINS....................$45</p>
+                  <p>60 MINS....................$85</p>
                 </div>
                 <div className="text-shadow">
                   <h2 className="item-title1 font-bold tracking-wider mb-6">
                     Foot Rub
                   </h2>
-                  <p>30 MINS....................$15</p>
-                  <p>60 MINS....................$25</p>
-                  <p>90 MINS....................$30</p>
+                  <p>30 MINS....................$20</p>
+                  <p>60 MINS....................$30</p>
+                  <p>90 MINS....................$45</p>
                 </div>
               </div>
               <div className="combo-container text-shadow">
@@ -77,10 +77,10 @@ export default function ServicesPage() {
                   Combo
                 </h2>
                 <p className="combo-text-class">
-                  Relaxing Spa + Foot Rub 90 MINS....................$55
+                  Relaxing Spa + Foot Rub 90 MINS....................$60
                 </p>
                 <p className="combo-text-class">
-                  Relaxing Spa + Facial 90 MINS..........................$60
+                  Relaxing Spa + Facial 90 MINS..........................$75
                 </p>
               </div>
             </div>
