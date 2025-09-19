@@ -29,7 +29,6 @@ export default function Home() {
               width={1000}
               height={450}
             />
-            <img src="/face.JPG" alt="services" width={1000} height={450} />
           </div>
           <div className="text-container text-shadow mb-8">
             <h2 className="text-6xl font-extrabold tracking-wider">
