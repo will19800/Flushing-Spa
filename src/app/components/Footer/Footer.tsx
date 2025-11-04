@@ -9,6 +9,7 @@ export default function Footer() {
         <div className="footer-info py-11 text-black">
           <p className="font-extrabold text-xl mb-4">Flushing Relaxing Spa</p>
           <p className="mb-4">Phone (appointments): 929-391-0284</p>
+          <p className="mb-4">Phone (main): 929-650-8338</p>
           <p className="mb-4">
             Address: 136-46 41st Ave Unit 1E, Flushing, NY 11355
           </p>
