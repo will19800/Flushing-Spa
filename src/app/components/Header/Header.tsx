@@ -67,10 +67,10 @@ export default function Header() {
             Contact
           </Link>
           <a
-            href="tel:929-205-8883"
+            href="tel:929-751-3666"
             className="p-4 rounded-full text-shadow bg-grassgreen"
           >
-            929-205-8883
+            929-751-3666
           </a>
         </nav>
 
@@ -106,11 +106,11 @@ export default function Header() {
               Contact
             </Link>
             <Link
-              href="tel:929-205-8883"
+              href="tel:929-751-3666"
               className="p-6 rounded-full text-shadow bg-grassgreen text-center text-2xl w-64 hover:bg-opacity-90 transition-colors"
               onClick={toggleMenu}
             >
-              929-205-8883
+              929-751-3666
             </Link>
           </nav>
         </div>

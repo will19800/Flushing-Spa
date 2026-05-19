@@ -9,7 +9,6 @@ import "./home.css";
 import { EmblaOptionsType } from "embla-carousel";
 
 export default function Home() {
-
   const OPTIONS: EmblaOptionsType = {
     loop: true,
     align: "center",
@@ -18,44 +17,55 @@ export default function Home() {
     watchDrag: false,
   };
 
-  // const SLIDES = ["/spa1.png", "/spa2.png", "/spa3.png", "/spa4.png"];
-
   const SLIDES = ["/cover.jpg"];
 
   const slidesData = [
     {
-      quote: "after a hard working day i had my body full relaxed. Thankx",
-      customer: "tingting yang",
+      quote: "Brand new Aura Spa at 31-10 21st Astoria NY 11106, with great massages, a relaxing atmosphere, calming music, flowing water, oil and hot stone therapy, a clean and safe space, friendly staff, and great prices.",
+      customer: "Jeffrey Faiella",
       profilePic: "/images/olga-profile.png",
       reviewSource: "Google",
     },
     {
-      quote: "Nice & relax , thank you!",
-      customer: "Gao Chun yan",
+      quote: "I booked this massage on a whim and the space was calming, clean, and relaxing. The massage was one of the best I’ve had in a long time, with great attention to tension points instead of feeling rushed. I left feeling completely refreshed, and the prices are very reasonable for the quality. Such a hidden gem in the neighborhood, and I will definitely be coming back regularly.",
+      customer: "Stephanie Mannie",
       profilePic: "/images/fatima-profile.png",
       reviewSource: "Google",
     },
     {
-      quote:
-        "I've been there a few times and I feel the environment is comfortable. I've also found two masseurs, one is Ding Ding and the other is Nina. Their service attitude is very good and their craftsmanship is also very conscientious. I'll come back next time.",
-      customer: "罗斌",
+      quote: "Fantastic 1-hour massage at Aura Spa! The facility is brand new, exceptionally clean, and very professional. It was exactly what I needed to unwind, and the price was great for the quality. Highly recommend for massage therapy.",
+      customer: "Mets Lift",
       profilePic: "/images/stefany-profile.png",
       reviewSource: "Google",
     },
     {
       quote:
-        "The environment is good, clean, quiet, the waiters are enthusiastic and skilled, you can really feel comfortable here, 👍🏻👍🏻👍🏻 Like it",
-      customer: "Kewei Xu Zhang",
+        "Very friendly and professional staff who are attentive and focused on your pain points. They offer lots of great packages, and it is highly worth the visit.",
+      customer: "Christopher Ramnarine",
       profilePic: "/images/stefany-profile.png",
       reviewSource: "Google",
     },
     {
       quote:
-        "The environment is good, professional, and the service is good. I will come again next time.",
-      customer: "J Chen",
+        "This was my second visit to Aura Spa, and I had another great experience. The spa is conveniently located on 21st Street with plenty of parking, and the space is new, clean, relaxing, and comfortable. Everyone was very friendly, scheduling was easy, and the massage was spot on from head to toe, especially for tight areas from golfing. The treatment was exactly what I needed at a great price, and I will definitely come back.",
+      customer: "engD",
       profilePic: "/images/stefany-profile.png",
       reviewSource: "Google",
     },
+  ];
+
+  const galleryImages = [
+    "building.PNG",
+    "frontdesk.jpg",
+    "gallery12.JPG",
+    "gallery13.JPG",
+    "logowall.PNG",
+    "beds.jpg",
+    "gallery14.PNG",
+    "gallery15.PNG",
+    "gallery16.PNG",
+    "gallery8.PNG",
+    "gallery17.JPG",
   ];
 
   return (
@@ -68,6 +78,7 @@ export default function Home() {
         <div className="background-component">
           <ImageCarousel slides={SLIDES} options={OPTIONS} />
         </div>
+
         <div className="absolute z-10">
           <div className="text-shadow hero-title tracking-wider">
             Aura Spa
@@ -85,18 +96,21 @@ export default function Home() {
               <img
                 src="/wechat.svg"
                 className="h-16 w-16 md:h-[100px] md:w-[100px]"
+                alt="WeChat icon"
               />
               <p className="text-black text-xl md:text-2xl mt-3">微信</p>
             </div>
+
             <div className="text-center">
               <img
                 src="/wechatqrcode.jpg"
                 className="h-16 w-16 md:h-[100px] md:w-[100px]"
+                alt="WeChat QR code"
               />
               <p className="text-black text-xl md:text-2xl mt-3">WeChat</p>
             </div>
           </div>
-          
+
           <a
             href="https://search.google.com/local/writereview?placeid=ChIJiR8gBgBhwokR7X0uasZR98o"
             className="py-3 px-7 text-lg text-shadow bg-grassgreen font-medium rounded-full hover:bg-green-600"
@@ -111,44 +125,22 @@ export default function Home() {
           <h1 className="text-center text-3xl md:text-5xl text-black p-6 md:p-12">
             Welcome To Our Spa
           </h1>
+
           <p className="text-md px-4 md:px-8 pb-8 md:pb-12 text-center text-black tracking-wider">
-            Aura Spa is a premier wellness center in the Astoria
-            neighborhood of Queens in New York City, New York, offering
-            authentic Chinese massage techniques rooted in ancient practices.
-            The center is led by a team of highly skilled and certified massage
-            therapists, dedicated to delivering exceptional care and relaxation.
-            The spa has been transforming the well-being of clients since its
-            establishment in 2016.
+            Welcome to Aura Spa—a tranquil sanctuary for healing the body and
+            mind, nestled in the heart of Astoria, New York.
             <br />
             <br />
-            Aura Spa specializes in a variety of massage therapies,
-            including Tuina (推拿) therapeutic massage, acupressure, oil push,
-            and gua sha for muscle tension relief and stress reduction. The spa
-            also offers reflexology, hot stone therapy, and cupping therapy,
-            tailored to each client’s unique needs. Harmony and balance are at
-            the heart of every treatment, combining traditional Chinese medicine
-            principles with modern relaxation practices.
+            Established in 2016, our spa features expert therapists who uphold
+            the traditions of Chinese therapeutic techniques, offering a
+            signature range of treatments including full-body massage, foot
+            massage, acupressure, foot reflexology, and hot stone therapy.
             <br />
             <br />
-            Additional services include full-body massages for improved
-            circulation and deep relaxation, as well as targeted head and neck
-            therapies to alleviate tension and promote mental clarity. Aura Spa incorporates high-quality essential oils and herbal
-            compresses to enhance the overall therapeutic experience.
-            Specialized packages for prenatal care, sports recovery, and posture
-            improvement are also available.
-            <br />
-            <br />
-            The tranquil ambiance at Aura Spa is designed to
-            provide the ultimate escape, featuring soothing music, aromatherapy,
-            and private treatment rooms. Clients can also purchase premium
-            herbal balms and oils, crafted with traditional Chinese ingredients,
-            to extend the benefits of their treatments at home.
-            <br />
-            <br />
-            At Aura Spa, the team is passionate about helping
-            clients achieve holistic well-being and relaxation. Schedule an
-            appointment online or call today to experience unparalleled care and
-            rejuvenation.
+            We craft personalized wellness experiences designed to alleviate
+            stress and harmonize the body and mind, allowing you to shed your
+            fatigue, regain your balance and vitality, and indulge in a truly
+            immersive journey of relaxation and rejuvenation.
           </p>
         </div>
       </section>
@@ -158,9 +150,11 @@ export default function Home() {
           <h2 className="text-xl md:text-2xl mb-4 md:mb-8 text-brown1">
             Customers Reviews
           </h2>
+
           <h1 className="text-4xl md:text-6xl text-shadow mb-10 md:mb-20">
             What Our Clients Say
           </h1>
+
           <ReviewCarousel slides={slidesData} options={OPTIONS} />
         </div>
       </section>
@@ -168,6 +162,7 @@ export default function Home() {
       <section>
         <div className="bg-offwhite text-shadow text-center">
           <h2 className="text-4xl md:text-7xl p-6 md:p-10">Gallery</h2>
+
           <p className="mb-8 mx-4 md:mb-12 md:mx-32">
             Immerse yourself in the tranquility and elegance of our space. Each
             corner of our spa is designed to provide relaxation, rejuvenation,
@@ -175,67 +170,15 @@ export default function Home() {
             and get a glimpse of the experience waiting for you.
           </p>
 
-          <div className="flex flex-col md:flex-row p-4 md:p-8 gap-4 md:gap-x-6">
-            <div className="w-full md:w-1/3 flex flex-col gap-4 md:gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 p-4 md:p-8 gap-4 md:gap-6">
+            {galleryImages.map((src) => (
               <img
-                className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6"
-                src="building.PNG"
+                key={src}
+                className="w-full h-80 object-cover rounded-lg"
+                src={src}
+                alt="Spa gallery"
               />
-              <img
-                className="w-full h-80 object-cover mb-4 md:mb-6"
-                src="frontdesk.jpg"
-              />
-              <img className="w-full h-80 object-cover" src="gallery3.PNG" />
-              <img
-                className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6"
-                src="gallery11.JPG"
-              />
-              <img
-                className="w-full h-80 object-cover mb-4 md:mb-6"
-                src="gallery12.JPG"
-              />
-              <img className="w-full h-80 object-cover" src="gallery13.JPG" />
-            </div>
-            <div className="w-full md:w-1/3 flex flex-col gap-4">
-              <img
-                className="w-full h-80 object-cover object-top mb-4 md:mb-6"
-                src="logowall.PNG"
-              />
-              <img
-                className="w-full h-80 object-cover mb-4 md:mb-6"
-                src="beds.jpg"
-              />
-              <img className="w-full h-80 object-cover" src="gallery6.PNG" />
-              <img
-                className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6"
-                src="gallery14.PNG"
-              />
-              <img
-                className="w-full h-80 object-cover mb-4 md:mb-6"
-                src="gallery15.PNG"
-              />
-              <img className="w-full h-80 object-cover" src="gallery16.PNG" />
-            </div>
-            <div className="w-full md:w-1/3 flex flex-col gap-4">
-              <img
-                className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-8"
-                src="gallery7.PNG"
-              />
-              <img
-                className="w-full h-80 object-cover mb-4 md:mb-6"
-                src="gallery8.PNG"
-              />
-              <img className="w-full h-80 object-cover" src="gallery9.PNG" />
-              <img
-                className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6"
-                src="gallery17.JPG"
-              />
-              <img
-                className="w-full h-80 object-cover mb-4 md:mb-6"
-                src="gallery18.PNG"
-              />
-              <img className="w-full h-80 object-cover" src="gallery10.JPG" />
-            </div>
+            ))}
           </div>
         </div>
       </section>
