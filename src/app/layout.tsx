@@ -10,7 +10,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Relaxing Spa 舒心养生馆",
+  title: "Aura Spa",
   description: "The best spa in Flushing",
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/SPA.svg" />
+        <link rel="icon" href="/SpaLogoNoBG.png" />
 
         {/* Google Tag Manager Script */}
         <Script

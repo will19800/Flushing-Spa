@@ -20,56 +20,37 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="container">
-          <div>
+        <div className="px-4 md:px-10 lg:px-20">
+          <div className="flex justify-center">
             <img
-              className="mb-8"
-              src="/gallery4.PNG"
-              alt="services"
-              width={1000}
-              height={450}
+              className="w-full max-w-7xl h-[500px] object-cover rounded-lg"
+              src="/building.PNG"
+              alt="Aura Spa building"
             />
           </div>
-          <div className="text-container text-shadow mb-8">
-            <h2 className="text-6xl font-extrabold tracking-wider">
-              Who We Are
-            </h2>
-            <div className="mt-8 text-xl">
-              <strong>Aura Spa</strong> is a licensed physical
-              therapy base affiliated with a medical college and established by
-              overseas Chinese representatives residing in New York.
-              <br />
-              <br />
-              Our team of experienced technicians works collaboratively to
-              uphold and promote the rich traditions of Chinese medicine,
-              particularly the art of meridian massage.
-              <br />
-              <br />
-              Our approach focuses on full-body acupoint massage, with special
-              emphasis on the back meridians and reflexology massage for the
-              feet.
-              <br />
-              By stimulating reflex points along the body's meridians, we aim to
-              unblock energy pathways, balance internal organ functions,
-              regulate qi and blood flow, and enhance overall well-being.
-              <br />
-              <br />
-              Key benefits of our treatments include:
-              <br />
-              - Strengthening the waist and spine.
-              <br />
-              - Boosting kidney function and vitality.
-              <br />
-              - Alleviating women's menstrual discomfort (dysmenorrhea).
-              <br />
-              - Regulating the endocrine system.
-              <br />
-              - Promoting healthier, more radiant skin.
-              <br />
-              <br />
-              At <strong>Aura Spa</strong>, we are dedicated to
-              harmonizing the body and mind, bringing the timeless benefits of
-              traditional Chinese medicine into your daily life.
+
+          <div className="max-w-7xl mx-auto">
+            <div className="text-container text-shadow mb-12 text-left">
+              <h2 className="text-4xl md:text-6xl font-extrabold tracking-wider">
+                Who We Are
+              </h2>
+
+              <div className="mt-8 text-lg md:text-xl leading-relaxed">
+                Welcome to Aura Spa—a tranquil sanctuary for healing the body and
+                mind, nestled in the heart of Astoria, New York.
+                <br />
+                <br />
+                Established in 2016, our spa features expert therapists who uphold
+                the traditions of Chinese therapeutic techniques, offering a
+                signature range of treatments including full-body massage, foot
+                massage, acupressure, foot reflexology, and hot stone therapy.
+                <br />
+                <br />
+                We craft personalized wellness experiences designed to alleviate
+                stress and harmonize the body and mind, allowing you to shed your
+                fatigue, regain your balance and vitality, and indulge in a truly
+                immersive journey of relaxation and rejuvenation.
+              </div>
             </div>
           </div>
         </div>

@@ -22,66 +22,82 @@ export default function ServicesPage() {
 
       <section>
         <div className="services-content">
-          <div>
+          {/* Left: Images */}
+          <div className="services-images">
             <img
               className="mb-10"
-              src="/services2.JPG"
+              src="/beds.jpg"
               alt="services"
               width={500}
               height={500}
             />
             <img src="/services1.PNG" alt="services" width={500} height={500} />
           </div>
-          <div className="ml-16 mt-8">
-            <h2 className="services-title text-shadow font-extrabold tracking-wider">
+
+          {/* Right: Price List */}
+          <div className="services-pricing">
+            <h2 className="services-title text-shadow font-extrabold tracking-wider text-center mb-10">
               Price List
             </h2>
-            <div className="font-class mt-8 flex-row text-2xl">
-              <div className="item-container">
-                <div className="text-shadow mr-16 mb-8">
-                  <h2 className="item-title font-bold tracking-wider mb-6">
-                    Relaxing Spa
-                  </h2>
-                  <p>30 MINS....................$30</p>
-                  <p>60 MINS....................$40</p>
-                  <p>90 MINS....................$65</p>
-                </div>
-                <div className="text-shadow mb-8">
-                  <h2 className="item-title font-bold tracking-wider mb-6">
-                    Head Therapy
-                  </h2>
-                  <p>30 MINS....................$30</p>
-                  <p>60 MINS....................$48</p>
-                  <p>90 MINS....................$60</p>
-                </div>
+
+            {/* Row 1: Body Deep Tissue + Foot Reflexology */}
+            <div className="price-row">
+              <div className="price-category text-shadow">
+                <h3 className="item-title font-bold tracking-wider mb-6">
+                  Relaxing Body Deep Tissue
+                </h3>
+                <p>30 MINS....................$35</p>
+                <p>45 MINS....................$45</p>
+                <p>60 MINS....................$55</p>
+                <p>90 MINS....................$85</p>
               </div>
-              <div className="item-container mb-8">
-                <div className="text-shadow mr-16">
-                  <h2 className="item-title font-bold tracking-wider mb-6">
-                    Facial
-                  </h2>
-                  <p>30 MINS....................$45</p>
-                  <p>60 MINS....................$85</p>
-                </div>
-                <div className="text-shadow">
-                  <h2 className="item-title1 font-bold tracking-wider mb-6">
-                    Foot Rub
-                  </h2>
-                  <p>30 MINS....................$20</p>
-                  <p>60 MINS....................$30</p>
-                  <p>90 MINS....................$45</p>
-                </div>
+              <div className="price-category text-shadow">
+                <h3 className="item-title font-bold tracking-wider mb-6">
+                  Foot Reflexology
+                </h3>
+                <p>30 MINS....................$30</p>
+                <p>45 MINS....................$38</p>
+                <p>60 MINS....................$45</p>
+                <p>90 MINS....................$70</p>
               </div>
-              <div className="combo-container text-shadow">
-                <h2 className="item-title font-bold tracking-wider mb-6">
-                  Combo
-                </h2>
-                <p className="combo-text-class">
-                  Relaxing Spa + Foot Rub 90 MINS....................$60
-                </p>
-                <p className="combo-text-class">
-                  Relaxing Spa + Facial 90 MINS..........................$75
-                </p>
+            </div>
+
+            {/* Row 2: Chair Massage + Head & Shoulder */}
+            <div className="price-row mt-8">
+              <div className="price-category text-shadow">
+                <h3 className="item-title font-bold tracking-wider mb-6">
+                  Chair Massage
+                </h3>
+                <p>10 MINS....................$15</p>
+                <p>20 MINS....................$25</p>
+                <p>30 MINS....................$35</p>
+              </div>
+              <div className="price-category text-shadow">
+                <h3 className="item-title font-bold tracking-wider mb-6">
+                  Head &amp; Shoulder
+                </h3>
+                <p>Head &amp; Shoulder 30 MINS......$45</p>
+                <p>Facial 30 MINS...................$55</p>
+                <p>Facial 60 MINS...................$85</p>
+              </div>
+            </div>
+
+            {/* Combo Packages — full width */}
+            <div className="combo-container text-shadow mt-8">
+              <h3 className="item-title font-bold tracking-wider mb-6">
+                Combo Packages
+              </h3>
+              <div className="combo-grid">
+                <p>30 mins Body + 30 mins Foot</p>
+                <p className="combo-price">$60</p>
+                <p>60 mins Body + 30 mins Foot</p>
+                <p className="combo-price">$85</p>
+                <p>30 mins Body + 60 mins Foot</p>
+                <p className="combo-price">$80</p>
+                <p>30 mins Head &amp; Shoulder + 60 mins Foot</p>
+                <p className="combo-price">$85</p>
+                <p>60 mins Body + 30 mins Facial</p>
+                <p className="combo-price">$95</p>
               </div>
             </div>
           </div>
