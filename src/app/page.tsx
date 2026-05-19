@@ -70,12 +70,10 @@ export default function Home() {
         </div>
         <div className="absolute z-10">
           <div className="text-shadow hero-title tracking-wider">
-            Flushing
-            <br />
-            Relaxing Spa
+            Aura Spa
           </div>
           <div className="text-shadow hero-subtitle tracking-wider">
-            SPA IN FLUSHING, NY
+            SPA IN ASTORIA, NY
           </div>
         </div>
       </section>
@@ -114,7 +112,7 @@ export default function Home() {
             Welcome To Our Spa
           </h1>
           <p className="text-md px-4 md:px-8 pb-8 md:pb-12 text-center text-black tracking-wider">
-            Flushing Relaxing Spa is a premier wellness center in the Flushing
+            Aura Spa is a premier wellness center in the Astoria
             neighborhood of Queens in New York City, New York, offering
             authentic Chinese massage techniques rooted in ancient practices.
             The center is led by a team of highly skilled and certified massage
@@ -123,7 +121,7 @@ export default function Home() {
             establishment in 2016.
             <br />
             <br />
-            Flushing Relaxing Spa specializes in a variety of massage therapies,
+            Aura Spa specializes in a variety of massage therapies,
             including Tuina (推拿) therapeutic massage, acupressure, oil push,
             and gua sha for muscle tension relief and stress reduction. The spa
             also offers reflexology, hot stone therapy, and cupping therapy,
@@ -134,21 +132,20 @@ export default function Home() {
             <br />
             Additional services include full-body massages for improved
             circulation and deep relaxation, as well as targeted head and neck
-            therapies to alleviate tension and promote mental clarity. Flushing
-            Relaxing Spa incorporates high-quality essential oils and herbal
+            therapies to alleviate tension and promote mental clarity. Aura Spa incorporates high-quality essential oils and herbal
             compresses to enhance the overall therapeutic experience.
             Specialized packages for prenatal care, sports recovery, and posture
             improvement are also available.
             <br />
             <br />
-            The tranquil ambiance at Flushing Relaxing Spa is designed to
+            The tranquil ambiance at Aura Spa is designed to
             provide the ultimate escape, featuring soothing music, aromatherapy,
             and private treatment rooms. Clients can also purchase premium
             herbal balms and oils, crafted with traditional Chinese ingredients,
             to extend the benefits of their treatments at home.
             <br />
             <br />
-            At Flushing Relaxing Spa, the team is passionate about helping
+            At Aura Spa, the team is passionate about helping
             clients achieve holistic well-being and relaxation. Schedule an
             appointment online or call today to experience unparalleled care and
             rejuvenation.
@@ -182,11 +179,11 @@ export default function Home() {
             <div className="w-full md:w-1/3 flex flex-col gap-4 md:gap-5">
               <img
                 className="w-full h-80 object-cover mb-4 md:mb-10 md:mt-6"
-                src="gallery1.PNG"
+                src="building.PNG"
               />
               <img
                 className="w-full h-80 object-cover mb-4 md:mb-6"
-                src="gallery2.PNG"
+                src="frontdesk.jpg"
               />
               <img className="w-full h-80 object-cover" src="gallery3.PNG" />
               <img
@@ -202,11 +199,11 @@ export default function Home() {
             <div className="w-full md:w-1/3 flex flex-col gap-4">
               <img
                 className="w-full h-80 object-cover object-top mb-4 md:mb-6"
-                src="gallery4.PNG"
+                src="logowall.PNG"
               />
               <img
                 className="w-full h-80 object-cover mb-4 md:mb-6"
-                src="gallery5.PNG"
+                src="beds.jpg"
               />
               <img className="w-full h-80 object-cover" src="gallery6.PNG" />
               <img

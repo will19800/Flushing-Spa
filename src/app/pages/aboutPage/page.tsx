@@ -35,7 +35,7 @@ export default function Home() {
               Who We Are
             </h2>
             <div className="mt-8 text-xl">
-              <strong>Relaxing Spa</strong> is a licensed physical
+              <strong>Aura Spa</strong> is a licensed physical
               therapy base affiliated with a medical college and established by
               overseas Chinese representatives residing in New York.
               <br />
@@ -67,7 +67,7 @@ export default function Home() {
               - Promoting healthier, more radiant skin.
               <br />
               <br />
-              At <strong>Relaxing Spa</strong>, we are dedicated to
+              At <strong>Aura Spa</strong>, we are dedicated to
               harmonizing the body and mind, bringing the timeless benefits of
               traditional Chinese medicine into your daily life.
             </div>

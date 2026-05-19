@@ -33,11 +33,11 @@ export default function Header() {
       >
         <Link href="/">
           <Image
-            src="/SPAlogo1.png"
+            src="/SpaLogoNoBG.png"
             className={`logo ${isScrolled ? "logo-small" : "logo-large"}`}
             alt="logo"
             height={106}
-            width={150}
+            width={120}
           />
         </Link>
 
@@ -67,10 +67,10 @@ export default function Header() {
             Contact
           </Link>
           <a
-            href="tel:929-391-0284"
+            href="tel:929-205-8883"
             className="p-4 rounded-full text-shadow bg-grassgreen"
           >
-            929-391-0284
+            929-205-8883
           </a>
         </nav>
 
@@ -106,11 +106,11 @@ export default function Header() {
               Contact
             </Link>
             <Link
-              href="tel:929-391-0284"
+              href="tel:929-205-8883"
               className="p-6 rounded-full text-shadow bg-grassgreen text-center text-2xl w-64 hover:bg-opacity-90 transition-colors"
               onClick={toggleMenu}
             >
-              929-391-0284
+              929-205-8883
             </Link>
           </nav>
         </div>

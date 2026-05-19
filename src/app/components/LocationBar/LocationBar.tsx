@@ -15,9 +15,9 @@ export default function LocationBar() {
           <div className="relative">
             <h2 className="text-3xl font-semibold text-brown1">Queens</h2>
             <p className="mt-5">
-              136-46 41st Ave Unit 1E
+              31-10 21st St
               <br />
-              Flushing, NY 11355
+              Astoria, NY 11106
             </p>
 
             <h3 className="mt-5 text-sm font-medium text-gray-900">
