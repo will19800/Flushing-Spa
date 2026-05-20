@@ -57,7 +57,7 @@ export default function Home() {
   const galleryImages = [
     "building.PNG",
     "frontdesk.jpg",
-    "gallery12.JPG",
+    "onebed.jpg",
     "gallery13.JPG",
     "logowall.PNG",
     "beds.jpg",
