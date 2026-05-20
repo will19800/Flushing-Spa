@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-container bg-offwhite flex mt-8">
         <div className="footer-info py-11 text-black">
           <p className="font-extrabold text-xl mb-4">Aura Spa</p>
-          <p className="mb-4">Phone (appointments): 929-751-3666</p>
+          <p className="mb-4">Phone (appointments): 929-205-8883</p>
           <p className="mb-4">Phone (main): 929-751-3666</p>
           <p className="mb-4">
             Address: 31-10 21st St, Astoria, NY 11106
