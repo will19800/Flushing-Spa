@@ -61,6 +61,7 @@ export default function Home() {
     "gallery13.JPG",
     "logowall.PNG",
     "beds.jpg",
+    "curtainwalls.jpg",
     "gallery14.PNG",
     "gallery15.PNG",
     "gallery16.PNG",
