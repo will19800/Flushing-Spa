@@ -37,7 +37,7 @@ export default function Header() {
             className={`logo ${isScrolled ? "logo-small" : "logo-large"}`}
             alt="logo"
             height={106}
-            width={120}
+            width={50}
           />
         </Link>
 

@@ -62,8 +62,8 @@ export default function Home() {
     "logowall.PNG",
     "beds.jpg",
     "curtainwalls.jpg",
-    "gallery14.PNG",
-    "gallery15.PNG",
+    "hotstonemassage.jpeg",
+    "multiplebeds.JPEG",
     "gallery16.PNG",
     "gallery8.PNG",
     "gallery17.JPG",
@@ -82,7 +82,7 @@ export default function Home() {
 
         <div className="absolute z-10">
           <div className="text-shadow hero-title tracking-wider">
-            Aura Spa
+            Aura Spa | Traditional Chinese Wellness
           </div>
           <div className="text-shadow hero-subtitle tracking-wider">
             SPA IN ASTORIA, NY
@@ -113,11 +113,19 @@ export default function Home() {
           </div>
 
           <a
+                href="tel:929-205-8883"
+                className="py-3 px-7 text-lg text-shadow bg-grassgreen font-medium rounded-full hover:bg-green-600"
+              >
+                Make an Appointment
+          </a>
+
+          <a
             href="https://www.google.com/maps/place/Aura+Spa/@40.7671532,-73.9328995,17z/data=!4m8!3m7!1s0x89c25f104c5d3e7b:0x921616058a2b5668!8m2!3d40.7671492!4d-73.9303192!9m1!1b1!16s%2Fg%2F11nj93hmm0?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D"
             className="py-3 px-7 text-lg text-shadow bg-grassgreen font-medium rounded-full hover:bg-green-600"
           >
             Leave Us a Review
           </a>
+          
         </div>
       </section>
 
