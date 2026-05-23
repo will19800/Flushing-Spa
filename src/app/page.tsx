@@ -17,7 +17,7 @@ export default function Home() {
     watchDrag: false,
   };
 
-  const SLIDES = ["/cover.jpg"];
+  const SLIDES = ["/frontpicture.JPEG"];
 
   const slidesData = [
     {
@@ -80,7 +80,7 @@ export default function Home() {
           <ImageCarousel slides={SLIDES} options={OPTIONS} />
         </div>
 
-        <div className="absolute z-10">
+        <div className="absolute z-10 left-8 md:left-12 lg:left-16 text-left max-w-[900px]">
           <div className="text-shadow hero-title tracking-wider">
             Aura Spa | Traditional Chinese Wellness
           </div>
@@ -91,8 +91,8 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="flex flex-col items-center my-10 md:my-20 gap-6 md:gap-11">
-          <div className="flex flex-row gap-6 md:gap-11">
+        <div className="flex flex-col items-center md:my-10 gap-6 md:gap-11">
+          {/* <div className="flex flex-row gap-6 md:gap-11">
             <div className="text-center">
               <img
                 src="/wechat.svg"
@@ -110,7 +110,7 @@ export default function Home() {
               />
               <p className="text-black text-xl md:text-2xl mt-3">WeChat</p>
             </div>
-          </div>
+          </div> */}
 
           <a
                 href="tel:929-205-8883"
