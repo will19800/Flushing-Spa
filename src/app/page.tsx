@@ -75,7 +75,7 @@ export default function Home() {
 
       <div className="h-[80px] md:h-[116px]"></div>
 
-      <section className="hero-section">
+      <section className="hero-section mb-4">
         <div className="background-component">
           <ImageCarousel slides={SLIDES} options={OPTIONS} />
         </div>
