@@ -81,17 +81,17 @@ export default function Home() {
         </div>
 
         <div className="absolute z-10 left-8 md:left-12 lg:left-16 text-left max-w-[900px]">
-          <div className="text-shadow hero-title tracking-wider">
+          <div className="text-white hero-title tracking-wider">
             Aura Spa | Traditional Chinese Wellness
           </div>
-          <div className="text-shadow hero-subtitle tracking-wider">
+          <div className="text-white hero-subtitle tracking-wider">
             SPA IN ASTORIA, NY
           </div>
         </div>
       </section>
 
       <section>
-        <div className="flex flex-col items-center md:my-10 gap-6 md:gap-11">
+        <div className="flex flex-col items-center md:my-16 mb-4 gap-6 md:gap-11">
           {/* <div className="flex flex-row gap-6 md:gap-11">
             <div className="text-center">
               <img
